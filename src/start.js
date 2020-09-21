@@ -7,14 +7,14 @@ const path = require('path');
  */
 
 //設定要讀哪一個樣板
-const checkTemplateTheme = 'template-adam';
-const checkThemeSetting = 'Adam';
+// const checkTemplateTheme = 'template-adam';
+// const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
 // const checkTemplateTheme = 'template-amy';
 // const checkThemeSetting = 'Amy';
-// const checkTemplateTheme = 'template-anson';
-// const checkThemeSetting = 'Anson';
+const checkTemplateTheme = 'template-anson';
+const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
@@ -42,7 +42,7 @@ const checkThemeSetting = 'Adam';
     path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', checkThemeSetting),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
-      return /\.vue$/.test(fname);
+      return /\.vue$/.test(fname) || /\.scss$/.test(fname);
     },
   );
 
@@ -51,7 +51,7 @@ const checkThemeSetting = 'Adam';
     path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', '_global'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
-      return /\.vue$/.test(fname);
+      return /\.vue$/.test(fname) || /\.scss$/.test(fname);
     },
   );
   //從user 去撈看看
@@ -59,7 +59,7 @@ const checkThemeSetting = 'Adam';
     path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', 'user'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
-      return /\.vue$/.test(fname);
+      return /\.vue$/.test(fname) || /\.scss$/.test(fname);
     },
   );
   /** 1.把所有單一樣板要用的檔案vue css 抓回來 */

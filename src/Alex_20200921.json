@@ -62,11 +62,20 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--input-bgcolor": [
+  "--about-content-bg": [
+    "Alex"
+  ],
+  "--about-content-color": [
+    "Alex"
+  ],
+  "--about-content-title-color": [
+    "Alex"
+  ],
+  "--input-fontcolor": [
     "user",
     "css"
   ],
-  "--input-fontcolor": [
+  "--input-bgcolor": [
     "user",
     "css"
   ],
@@ -79,14 +88,35 @@
   "--select-fontcolor": [
     "user"
   ],
-  "--about-content-bg": [
-    "Alex"
+  "--user-color": [
+    "user"
   ],
-  "--about-content-color": [
-    "Alex"
+  "--user-card-color": [
+    "user"
   ],
-  "--about-content-title-color": [
-    "Alex"
+  "--user-sidebar-bgcolor": [
+    "user"
+  ],
+  "--user-sidebar--li-bgcolor--actived": [
+    "user"
+  ],
+  "--user-bankcard--card-bgcolor": [
+    "user"
+  ],
+  "--user-bankcard--card-color": [
+    "user"
+  ],
+  "--user-form--input-color": [
+    "user"
+  ],
+  "--user-form--input-bgcolor": [
+    "user"
+  ],
+  "--user-form--search-input-color": [
+    "user"
+  ],
+  "--user-form--search-input-bgcolor": [
+    "user"
   ],
   "--table-bgcolor": [
     "user"

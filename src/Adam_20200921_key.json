@@ -36,5 +36,15 @@
   "--table--tr-hover-color",
   "--table--tr-odd-bgcolor",
   "--table-bgcolor",
-  "--table-color"
+  "--table-color",
+  "--user-bankcard--card-bgcolor",
+  "--user-bankcard--card-color",
+  "--user-card-color",
+  "--user-color",
+  "--user-form--input-bgcolor",
+  "--user-form--input-color",
+  "--user-form--search-input-bgcolor",
+  "--user-form--search-input-color",
+  "--user-sidebar--li-bgcolor--actived",
+  "--user-sidebar-bgcolor"
 ]
