@@ -1,0 +1,142 @@
+{
+  "--font-color": [
+    "Anson",
+    "global",
+    "user",
+    "css"
+  ],
+  "--bg-color": [
+    "Anson",
+    "user",
+    "css"
+  ],
+  "--header-bgcolor": [
+    "css"
+  ],
+  "--link-color": [
+    "css"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-bgcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--q-color-primary": [
+    "user",
+    "css"
+  ],
+  "--q-color-positive": [
+    "user"
+  ],
+  "--q-color-negative": [
+    "user"
+  ],
+  "--primary-color": [
+    "Anson",
+    "css"
+  ],
+  "--primary-color-opacity": [
+    "Anson"
+  ],
+  "--gradient-color": [
+    "css"
+  ],
+  "--secondary-color": [
+    "css"
+  ],
+  "--secondary-color-light": [
+    "css"
+  ],
+  "--secondary-color-dark": [
+    "css"
+  ],
+  "--secondary-color-opacity": [
+    "css"
+  ],
+  "--accent-color": [
+    "css"
+  ],
+  "--dialog-bgcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-fontcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-title-fontcolor": [
+    "css"
+  ],
+  "--dialog-title-fontsize": [
+    "css"
+  ],
+  "--grayscale-color": [
+    "Anson",
+    "css"
+  ],
+  "--grayscale-color-light": [
+    "Anson",
+    "css"
+  ],
+  "--grayscale-color-dark": [
+    "css"
+  ],
+  "--grayscale-color-opacity": [
+    "Anson",
+    "css"
+  ],
+  "--loginForm-bgcolor": [
+    "user"
+  ],
+  "--loginForm-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontsize": [
+    "user"
+  ],
+  "--about-content-bg": [
+    "Anson"
+  ],
+  "--about-content-color": [
+    "Anson"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
+  "--table-bgcolor": [
+    "user"
+  ],
+  "--table-color": [
+    "user"
+  ],
+  "--table--header-bgcolor": [
+    "user"
+  ],
+  "--table--header-color": [
+    "user"
+  ],
+  "--table--tr-hover-color": [
+    "user"
+  ],
+  "--table--tr-odd-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-color": [
+    "user"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "--font-color": [
+    "Amy",
+    "global",
+    "user",
+    "css"
+  ],
+  "--bg-color": [
+    "Amy",
+    "user",
+    "css"
+  ],
+  "--header-bgcolor": [
+    "css"
+  ],
+  "--link-color": [
+    "css"
+  ],
+  "--q-color-primary": [
+    "user",
+    "css"
+  ],
+  "--q-color-positive": [
+    "user"
+  ],
+  "--q-color-negative": [
+    "user",
+    "css"
+  ],
+  "--activityTab-color": [
+    "Amy"
+  ],
+  "--activityTab-bgcolor": [
+    "Amy"
+  ],
+  "--activityTab-borderColor": [
+    "Amy"
+  ],
+  "--dialog-bgcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-fontcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-title-fontcolor": [
+    "css"
+  ],
+  "--dialog-title-fontsize": [
+    "css"
+  ],
+  "--loginForm-bgcolor": [
+    "user"
+  ],
+  "--loginForm-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontsize": [
+    "user"
+  ],
+  "--about-sidebar-color": [
+    "css"
+  ],
+  "--about-sidebar-bgcolor": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-color": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-bgcolor": [
+    "css"
+  ],
+  "--about-content-bg": [
+    "css"
+  ],
+  "--input-bgcolor": [
+    "user",
+    "css"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
+  "--menu-text-color": [
+    "css"
+  ],
+  "--menu-text-hover": [
+    "css"
+  ],
+  "--menu-boder-hover": [
+    "css"
+  ],
+  "--header-to-bg-color": [
+    "css"
+  ],
+  "--table-bgcolor": [
+    "user"
+  ],
+  "--table-color": [
+    "user"
+  ],
+  "--table--header-bgcolor": [
+    "user"
+  ],
+  "--table--header-color": [
+    "user"
+  ],
+  "--table--tr-hover-color": [
+    "user"
+  ],
+  "--table--tr-odd-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-color": [
+    "user"
+  ]
+}

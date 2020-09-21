@@ -1,0 +1,115 @@
+{
+  "--font-color": [
+    "Alex",
+    "global",
+    "user",
+    "css"
+  ],
+  "--bg-color": [
+    "Alex",
+    "user",
+    "css"
+  ],
+  "--header-bgcolor": [
+    "css"
+  ],
+  "--link-color": [
+    "css"
+  ],
+  "--q-color-primary": [
+    "Alex",
+    "user"
+  ],
+  "--q-color-positive": [
+    "user"
+  ],
+  "--q-color-negative": [
+    "user",
+    "css"
+  ],
+  "--activityTab-color": [
+    "Alex"
+  ],
+  "--activityTab-bgcolor": [
+    "Alex"
+  ],
+  "--activityTab-borderColor": [
+    "Alex"
+  ],
+  "--dialog-bgcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-fontcolor": [
+    "global",
+    "css"
+  ],
+  "--dialog-title-fontcolor": [
+    "css"
+  ],
+  "--dialog-title-fontsize": [
+    "css"
+  ],
+  "--loginForm-bgcolor": [
+    "user"
+  ],
+  "--loginForm-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontsize": [
+    "user"
+  ],
+  "--about-content-bg": [
+    "Alex"
+  ],
+  "--about-content-color": [
+    "Alex"
+  ],
+  "--about-content-title-color": [
+    "Alex"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-bgcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
+  "--table-bgcolor": [
+    "user"
+  ],
+  "--table-color": [
+    "user"
+  ],
+  "--table--header-bgcolor": [
+    "user"
+  ],
+  "--table--header-color": [
+    "user"
+  ],
+  "--table--tr-hover-color": [
+    "user"
+  ],
+  "--table--tr-odd-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-bgcolor": [
+    "user"
+  ],
+  "--table--gridcard-color": [
+    "user"
+  ]
+}

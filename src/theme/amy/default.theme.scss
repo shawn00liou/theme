@@ -1,0 +1,54 @@
+html[theme] {
+  // basic
+  --font-color: #8996aa;
+  --bg-color: #15151b;
+  --header-bgcolor: #0b0f21;
+  --link-color: var(--font-color);
+
+  // colors
+  --q-color-primary: #1e83ff;
+  --q-color-secondary: #26a69a;
+  --q-color-accent: #9c27b0;
+  --q-color-dark: #1d1d1d;
+  --q-color-positive: #2aa524;
+  --q-color-negative: #d23546;
+  --q-color-info: #31ccec;
+  --q-color-warning: #f2c037;
+
+  //
+  --activityTab-color: #8996aa;
+  --activityTab-bgcolor: #313445;
+  --activityTab-borderColor: #1f212e;
+
+  --promotions-htmlContent: #fff;
+
+  --dialog-bgcolor: #1d1e28;
+  --dialog-fontcolor: #fff;
+  --dialog-title-fontcolor: var(--dialog-fontcolor);
+  --dialog-title-fontsize: 18px;
+
+  --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
+  --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
+  --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);
+  --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit);
+
+  --input-bgcolor: #2e3136;
+  --input-fontcolor: #8996aa;
+  --input-placeholder-fontcolor: inherit;
+
+  --select-bgcolor: var(--input-bgcolor);
+  --select-fontcolor: var(--input-fontcolor);
+
+  --about-sidebar-color: var(--font-color);
+  --about-sidebar-bgcolor: #232635;
+  --about-sidebar-itemActive-color: #fff;
+  --about-sidebar-itemActive-bgcolor: #313445;
+  --about-content-bg: rgba(35, 38, 53, 0.5);
+  --about-content-color: var(--font-color);
+  --about-content-title-color: #fff;
+
+  --menu-text-color: #fff;
+  --menu-text-hover: #ff0000;
+  --menu-boder-hover: #8996aa;
+  --header-to-bg-color: var(--bg-color);
+}
