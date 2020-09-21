@@ -118,6 +118,23 @@ const checkThemeSetting = 'Anson';
     const d = new Date();
     const backupDate = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
+
+    const userJson = [];
+    Object.keys(themeJson).forEach((val) => {
+      //過濾出只用一次的user
+      if (themeJson[val].length == 1) {
+        switch (true) {
+          case themeJson[val][0] === 'user':
+            userJson.push(val);
+            break;
+        }
+      }
+    });
+    filesJs.writeFile(
+      checkThemeSetting + '_' + backupDate + '_user.json',
+      JSON.stringify(userJson, null, 2),
+      errorHandler,
+    );
   });
 })();
 

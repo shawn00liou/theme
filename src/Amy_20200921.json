@@ -77,11 +77,11 @@
   "--about-content-bg": [
     "css"
   ],
-  "--input-bgcolor": [
+  "--input-fontcolor": [
     "user",
     "css"
   ],
-  "--input-fontcolor": [
+  "--input-bgcolor": [
     "user",
     "css"
   ],

@@ -1,0 +1,18 @@
+[
+  "--input-placeholder-fontcolor",
+  "--q-color-positive",
+  "--loginForm-bgcolor",
+  "--loginForm-fontcolor",
+  "--loginForm-title-fontcolor",
+  "--loginForm-title-fontsize",
+  "--select-bgcolor",
+  "--select-fontcolor",
+  "--table-bgcolor",
+  "--table-color",
+  "--table--header-bgcolor",
+  "--table--header-color",
+  "--table--tr-hover-color",
+  "--table--tr-odd-bgcolor",
+  "--table--gridcard-bgcolor",
+  "--table--gridcard-color"
+]
