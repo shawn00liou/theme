@@ -1,14 +1,20 @@
 const filesJs = require('./files.js');
 const path = require('path');
+/**
+ * start.js
+ * 讀取Theme 生成json做分析
+ *
+ */
 
+//設定要讀哪一個樣板
 // const checkTemplateTheme = 'template-adam';
 // const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
-// const checkTemplateTheme = 'template-amy';
-// const checkThemeSetting = 'Amy';
-const checkTemplateTheme = 'template-anson';
-const checkThemeSetting = 'Anson';
+const checkTemplateTheme = 'template-amy';
+const checkThemeSetting = 'Amy';
+// const checkTemplateTheme = 'template-anson';
+// const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
@@ -56,10 +62,11 @@ const checkThemeSetting = 'Anson';
       return /\.vue$/.test(fname);
     },
   );
-
+  /** 1.把所有單一樣板要用的檔案vue css 抓回來 */
   const allFileList = [...sitpackageModule, ...sitpackageComponents, ...sitpackageUser, ...templatefilelist];
 
   const mapJSon = {};
+  /** 2.把所有單一樣板要用的theme 設定抓回來 */
   const promise = new Promise((resolve, err) => {
     var countLoading = 0;
     fileList.forEach((filepath) => {
@@ -69,7 +76,7 @@ const checkThemeSetting = 'Anson';
           if ([...element].includes(':')) {
             const ar = String(element).split(':');
             const key = ar[0];
-            // console.log(key);
+            /** 3.取回所有的設定key */
             mapJSon[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
           }
         });
@@ -85,6 +92,7 @@ const checkThemeSetting = 'Anson';
   const themeJson = {};
   promise.then(() => {
     Object.keys(mapJSon).forEach((key) => {
+      /** 從全部檔案裡面去找,把真正這個版要用的找出來 */
       allFileList.forEach((temppath) => {
         const checkFile = filesJs.readFileSync(temppath, { encoding: 'utf8' });
         if (checkFile.indexOf('var(' + key) >= 0) {
@@ -116,8 +124,13 @@ const checkThemeSetting = 'Anson';
     console.log('sucess!!!', themeJson);
     //建立輸出日期
     const d = new Date();
-    const backupDate = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+    const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
+    filesJs.writeFile(
+      checkThemeSetting + '_' + backupDate + '_key.json',
+      JSON.stringify(Object.keys(themeJson).sort(), null, 2),
+      errorHandler,
+    );
 
     const userJson = [];
     Object.keys(themeJson).forEach((val) => {

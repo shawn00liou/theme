@@ -62,6 +62,23 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
+  "--input-bgcolor": [
+    "user",
+    "css"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
   "--about-sidebar-color": [
     "css"
   ],
@@ -77,23 +94,6 @@
   "--about-content-bg": [
     "css"
   ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-bgcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
-  ],
   "--menu-text-color": [
     "css"
   ],
@@ -104,6 +104,7 @@
     "css"
   ],
   "--header-to-bg-color": [
+    "Amy",
     "css"
   ],
   "--table-bgcolor": [

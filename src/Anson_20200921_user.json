@@ -1,6 +1,5 @@
 [
   "--q-color-positive",
-  "--q-color-negative",
   "--loginForm-bgcolor",
   "--loginForm-fontcolor",
   "--loginForm-title-fontcolor",

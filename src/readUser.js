@@ -1,5 +1,11 @@
 const filesJs = require('./files.js');
 const path = require('path');
+/**
+ * readUser.js
+ * 針對User做分析 輸出一份全部樣板都使用到的user參數
+ *
+ *
+ */
 
 (async function () {
   console.log('read init');
@@ -29,7 +35,7 @@ const path = require('path');
     }
   });
   const d = new Date();
-  const backupDate = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+  const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
   //輸出四個樣版都有使用到的user
   filesJs.writeFile('user_' + backupDate + '.json', JSON.stringify(userDefault, null, 2), errorHandler);
   console.log(userDefault);
