@@ -7,23 +7,23 @@ const path = require('path');
  */
 
 //設定要讀哪一個樣板
-// const checkTemplateTheme = 'template-adam';
-// const checkThemeSetting = 'Adam';
+const checkTemplateTheme = 'template-adam';
+const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
-const checkTemplateTheme = 'template-amy';
-const checkThemeSetting = 'Amy';
+// const checkTemplateTheme = 'template-amy';
+// const checkThemeSetting = 'Amy';
 // const checkTemplateTheme = 'template-anson';
 // const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
   const dirpath = ['adam', 'amy', 'anson', 'alex'];
-  const fileList = [];
+  const themeFileList = [];
   dirpath.forEach((dirname) => {
     const scsslist = filesJs.readdirSync(path.resolve('.', 'theme', dirname)).forEach((element) => {
       if (/scss/.test(element) && element) {
-        fileList.push(['.', 'theme', dirname, element]);
+        themeFileList.push(['.', 'theme', dirname, element]);
       }
     });
   });
@@ -66,10 +66,11 @@ const checkThemeSetting = 'Amy';
   const allFileList = [...sitpackageModule, ...sitpackageComponents, ...sitpackageUser, ...templatefilelist];
 
   const mapJSon = {};
+  const currentJson = {};
   /** 2.把所有單一樣板要用的theme 設定抓回來 */
   const promise = new Promise((resolve, err) => {
     var countLoading = 0;
-    fileList.forEach((filepath) => {
+    themeFileList.forEach((filepath) => {
       filesJs.readFile(path.resolve(...filepath), 'utf8', function (err, data) {
         const dataArray = data.split('\n');
         dataArray.forEach((element) => {
@@ -78,11 +79,15 @@ const checkThemeSetting = 'Amy';
             const key = ar[0];
             /** 3.取回所有的設定key */
             mapJSon[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
+
+            if (filepath.includes(checkThemeSetting.toLocaleLowerCase())) {
+              currentJson[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
+            }
           }
         });
         countLoading = countLoading + 1;
 
-        if (countLoading == fileList.length) {
+        if (countLoading == themeFileList.length) {
           resolve();
         }
       });
@@ -129,6 +134,11 @@ const checkThemeSetting = 'Amy';
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_key.json',
       JSON.stringify(Object.keys(themeJson).sort(), null, 2),
+      errorHandler,
+    );
+    filesJs.writeFile(
+      checkThemeSetting + '_' + backupDate + '_defkey.json',
+      JSON.stringify(Object.keys(currentJson).sort(), null, 2),
       errorHandler,
     );
 

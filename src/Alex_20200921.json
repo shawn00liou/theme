@@ -16,17 +16,6 @@
   "--link-color": [
     "css"
   ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-bgcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
   "--q-color-primary": [
     "Alex",
     "user"
@@ -73,6 +62,23 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
+  "--input-bgcolor": [
+    "user",
+    "css"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
   "--about-content-bg": [
     "Alex"
   ],
@@ -81,12 +87,6 @@
   ],
   "--about-content-title-color": [
     "Alex"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
   ],
   "--table-bgcolor": [
     "user"

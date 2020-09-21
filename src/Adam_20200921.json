@@ -63,22 +63,6 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--input-bgcolor": [
-    "user"
-  ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
-  ],
   "--about-sidebar-color": [
     "css"
   ],
@@ -99,6 +83,22 @@
   ],
   "--about-content-title-color": [
     "Adam"
+  ],
+  "--input-bgcolor": [
+    "user"
+  ],
+  "--input-fontcolor": [
+    "user",
+    "css"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
   ],
   "--table-bgcolor": [
     "user"
