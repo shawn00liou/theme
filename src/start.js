@@ -8,16 +8,16 @@ const extend = require('extend');
  */
 
 //設定要讀哪一個樣板
-const checkThemeSitconfig = 'default'; //light,default
+const checkThemeSitconfig = 'light'; //light,default
 
-const checkTemplateTheme = 'template-adam';
-const checkThemeSetting = 'Adam';
+// const checkTemplateTheme = 'template-adam';
+// const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
 // const checkTemplateTheme = 'template-amy';
 // const checkThemeSetting = 'Amy';
-// const checkTemplateTheme = 'template-anson';
-// const checkThemeSetting = 'Anson';
+const checkTemplateTheme = 'template-anson';
+const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
@@ -188,6 +188,9 @@ const checkThemeSetting = 'Adam';
         return true;
       }
     });
+
+    const cloneCurrentLine = extend(true, [], currentLine);
+
     /** 6.刪掉 */
     delCurrentKeyList.forEach((val) => {
       currentLine.forEach((line, ind) => {
@@ -210,20 +213,27 @@ const checkThemeSetting = 'Adam';
     );
 
     //全部的key 輸出一份scss
+    const lineArray = cloneCurrentLine
+      .map((line) => {
+        if (line.indexOf(':') !== -1) {
+          return line.split(':')[0].replace(/^\s+/, '');
+        }
+      })
+      .filter((val) => val);
+
+    // console.log('.......');
     const logger = filesJs.createWriteStream(path.resolve('.', 'useAll_' + backupDate + '_key.scss'), {
       flags: 'w', // 'a' means appending (old data will be preserved)
     });
     logger.write('html[theme] {\n');
 
-    Object.keys(mapJSon)
-      .sort()
-      .forEach((key) => {
-        if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
-          logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
-        } else {
-          logger.write(`  ${key}: \n`);
-        }
-      });
+    extend(true, [], Object.keys(mapJSon), lineArray).forEach((key) => {
+      if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
+        logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
+      } else {
+        logger.write(`  ${key}: \n`);
+      }
+    });
     logger.write('}');
     logger.end();
   });
