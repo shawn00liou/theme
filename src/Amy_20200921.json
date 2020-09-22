@@ -16,17 +16,6 @@
   "--link-color": [
     "css"
   ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-bgcolor": [
-    "css",
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
   "--q-color-primary": [
     "css",
     "user"
@@ -88,6 +77,17 @@
   "--about-content-bg": [
     "css"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
   "--select-bgcolor": [
     "user"
   ],
@@ -124,19 +124,6 @@
   "--user-form--search-input-bgcolor": [
     "user"
   ],
-  "--menu-text-color": [
-    "css"
-  ],
-  "--menu-text-hover": [
-    "css"
-  ],
-  "--menu-boder-hover": [
-    "css"
-  ],
-  "--header-to-bg-color": [
-    "Amy",
-    "css"
-  ],
   "--table-bgcolor": [
     "user"
   ],
@@ -160,5 +147,18 @@
   ],
   "--table--gridcard-color": [
     "user"
+  ],
+  "--menu-text-color": [
+    "css"
+  ],
+  "--menu-text-hover": [
+    "css"
+  ],
+  "--menu-boder-hover": [
+    "css"
+  ],
+  "--header-to-bg-color": [
+    "Amy",
+    "css"
   ]
 }

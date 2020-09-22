@@ -1,20 +1,31 @@
 {
   "--font-color": [
     "Alex",
+    "css",
     "global",
-    "user",
-    "css"
+    "user"
   ],
   "--bg-color": [
     "Alex",
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--header-bgcolor": [
     "css"
   ],
   "--link-color": [
     "css"
+  ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
   ],
   "--q-color-primary": [
     "Alex",
@@ -24,8 +35,8 @@
     "user"
   ],
   "--q-color-negative": [
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--activityTab-color": [
     "Alex"
@@ -37,12 +48,12 @@
     "Alex"
   ],
   "--dialog-bgcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-fontcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-title-fontcolor": [
     "css"
@@ -70,17 +81,6 @@
   ],
   "--about-content-title-color": [
     "Alex"
-  ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-bgcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
   ],
   "--select-bgcolor": [
     "user"

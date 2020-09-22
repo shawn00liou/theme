@@ -8,12 +8,14 @@ const extend = require('extend');
  */
 
 //設定要讀哪一個樣板
+const checkThemeSitconfig = 'light';
+
 // const checkTemplateTheme = 'template-adam';
 // const checkThemeSetting = 'Adam';
-// const checkTemplateTheme = 'template-alex';
-// const checkThemeSetting = 'Alex';
-const checkTemplateTheme = 'template-amy';
-const checkThemeSetting = 'Amy';
+const checkTemplateTheme = 'template-alex';
+const checkThemeSetting = 'Alex';
+// const checkTemplateTheme = 'template-amy';
+// const checkThemeSetting = 'Amy';
 // const checkTemplateTheme = 'template-anson';
 // const checkThemeSetting = 'Anson';
 
@@ -65,25 +67,38 @@ const checkThemeSetting = 'Amy';
   );
   /** 1.把所有單一樣板要用的檔案vue css 抓回來 */
   const allFileList = [...sitpackageModule, ...sitpackageComponents, ...sitpackageUser, ...templatefilelist];
-
+  //所有樣板的theme key map
   const mapJSon = {};
+  //本次執行的樣板 theme key
   const currentJson = {};
-  /** 2.把所有單一樣板要用的theme 設定抓回來 */
+  //本次執行的樣板 line 紀錄
+  const currentLine = [];
+  /** 2.把所有樣板要用的theme 設定抓回來 */
   const promise = new Promise((resolve, err) => {
     var countLoading = 0;
     themeFileList.forEach((filepath) => {
       filesJs.readFile(path.resolve(...filepath), 'utf8', function (err, data) {
         const dataArray = data.split('\n');
-        dataArray.forEach((element) => {
+
+        dataArray.forEach((element, ind) => {
           if ([...element].includes(':')) {
             const ar = String(element).split(':');
             const key = ar[0];
             /** 3.取回所有的設定key */
             mapJSon[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
-
-            if (filepath.includes(checkThemeSetting.toLocaleLowerCase())) {
+            //區分指定的樣板 theme key
+            if (
+              filepath.includes(checkThemeSetting.toLocaleLowerCase()) &&
+              filepath.toString().indexOf(checkThemeSitconfig) !== -1
+            ) {
               currentJson[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
             }
+          }
+          if (
+            filepath.includes(checkThemeSetting.toLocaleLowerCase()) &&
+            filepath.toString().indexOf(checkThemeSitconfig) !== -1
+          ) {
+            currentLine[ind] = element;
           }
         });
         countLoading = countLoading + 1;
@@ -98,7 +113,7 @@ const checkThemeSetting = 'Amy';
   const themeJson = {};
   promise.then(() => {
     Object.keys(mapJSon).forEach((key) => {
-      /** 從全部檔案裡面去找,把真正這個版要用的找出來 */
+      /** 4.從全部檔案裡面去找,把真正這個版要用的找出來 */
       allFileList.forEach((temppath) => {
         const checkFile = filesJs.readFileSync(temppath, { encoding: 'utf8' });
         if (checkFile.indexOf('var(' + key) >= 0) {
@@ -127,7 +142,7 @@ const checkThemeSetting = 'Amy';
         }
       });
     });
-    console.log('sucess!!!');
+
     //建立輸出日期
     const d = new Date();
     const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
@@ -142,10 +157,9 @@ const checkThemeSetting = 'Amy';
       JSON.stringify(Object.keys(currentJson).sort(), null, 2),
       errorHandler,
     );
-
+    //從樣板內過濾出只用一次的user key
     const userJson = [];
     Object.keys(themeJson).forEach((val) => {
-      //過濾出只用一次的user
       if (themeJson[val].length == 1) {
         switch (true) {
           case themeJson[val][0] === 'user':
@@ -157,6 +171,38 @@ const checkThemeSetting = 'Amy';
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_user.json',
       JSON.stringify(userJson, null, 2),
+      errorHandler,
+    );
+    /** 5.從目前在用的theme 去 比對實際有用的  抓出多餘的 */
+    const delCurrentKeyList = Object.keys(currentJson).filter((key) => {
+      if (!Object.keys(themeJson).includes(key)) {
+        return true;
+      }
+    });
+    /** 從實際有用的 跟 目前在用的theme  比對抓出 沒有在目前在用的裡面的key 要拿來新增 */
+    const addCurrentKeyList = Object.keys(themeJson).filter((key) => {
+      if (!Object.keys(currentJson).includes(key)) {
+        return true;
+      }
+    });
+    /** 6.刪掉 */
+    delCurrentKeyList.forEach((val) => {
+      currentLine.forEach((line, ind) => {
+        const index = line.indexOf(val);
+        if (index !== -1) {
+          currentLine[ind] = '';
+        }
+      });
+    });
+
+    /** 新增還沒寫 因為新增也要寫對應的參數*/
+    //
+    //
+    //
+    /** 輸出scss */
+    filesJs.writeFile(
+      checkThemeSetting + '_' + backupDate + '.scss',
+      currentLine.filter((v) => v !== '').join('\n'),
       errorHandler,
     );
   });

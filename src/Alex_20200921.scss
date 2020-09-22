@@ -1,0 +1,60 @@
+html[theme] {
+  --font-color: #8996aa;
+  --bg-color: #eeeeee;
+  --header-bgcolor: #ffffff;
+  --link-color: var(--font-color);
+  --input-fontcolor: var(--font-color);
+  --input-bgcolor: #fff;
+  --input-placeholder-fontcolor: inherit;
+  --q-color-primary: #b71c1c;
+  --q-color-positive: #2aa524;
+  --q-color-negative: #c10015;
+  //主色
+  //漸層色
+  //
+  --activityTab-color: #8996aa;
+  --activityTab-bgcolor: #313445;
+  --activityTab-borderColor: #1f212e;
+  //輔助色
+  //強調色
+  --dialog-bgcolor: var(--bg-color);
+  --dialog-fontcolor: var(--font-color);
+  --dialog-title-fontcolor: var(--dialog-fontcolor);
+  --dialog-title-fontsize: 18px;
+  //灰階
+  --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
+  --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
+  --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);
+  --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit);
+  --about-content-bg: rgba(35, 38, 53, 0.5);
+  --about-content-color: var(--font-color);
+  --about-content-title-color: #fff;
+  --select-bgcolor: var(--input-bgcolor);
+  --select-fontcolor: var(--input-fontcolor);
+  // 使用者銀行卡管理
+  // --- user ---
+  // --- user ---
+  // --- user ---
+  --user-color: #000;
+  --user-card-color: #f4f4f4;
+  // sidebar
+  --user-sidebar-bgcolor: #{rgba(grey, 0.2)};
+  --user-sidebar--li-bgcolor--actived: var(--q-color-negative);
+  // 使用者銀行卡片
+  --user-bankcard--card-bgcolor: #{rgba(#000, 0.4)};
+  --user-bankcard--card-color: #fff;
+  // 一般input
+  --user-form--input-color: var(--input-fontcolor);
+  --user-form--input-bgcolor: var(--input-bgcolor);
+  // 搜尋bar有不同的顏色
+  --user-form--search-input-color: var(--input-fontcolor);
+  --user-form--search-input-bgcolor: var(--input-bgcolor);
+  --table-bgcolor: transparent;
+  --table-color: #2b2e3e;
+  --table--header-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--header-color: #2b2e3e;
+  --table--tr-hover-color: inherit;
+  --table--tr-odd-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--gridcard-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--gridcard-color: #2b2e3e;
+}
