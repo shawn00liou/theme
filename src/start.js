@@ -197,7 +197,7 @@ const checkThemeSetting = 'Alex';
 
     /** 新增還沒寫 因為新增也要寫對應的參數*/
     //
-    //
+    console.log('注意一下需要寫新增', addCurrentKeyList);
     //
     /** 輸出scss */
     filesJs.writeFile(
