@@ -1,12 +1,12 @@
 {
   "--font-color": [
-    "Alex",
+    "Adam",
     "css",
     "global",
     "user"
   ],
   "--bg-color": [
-    "Alex",
+    "Adam",
     "css",
     "user"
   ],
@@ -16,19 +16,9 @@
   "--link-color": [
     "css"
   ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-bgcolor": [
-    "css",
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
   "--q-color-primary": [
-    "Alex",
+    "Adam",
+    "css",
     "user"
   ],
   "--q-color-positive": [
@@ -39,13 +29,13 @@
     "user"
   ],
   "--activityTab-color": [
-    "Alex"
+    "Adam"
   ],
   "--activityTab-bgcolor": [
-    "Alex"
+    "Adam"
   ],
   "--activityTab-borderColor": [
-    "Alex"
+    "Adam"
   ],
   "--dialog-bgcolor": [
     "css",
@@ -73,14 +63,36 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
+  "--about-sidebar-color": [
+    "css"
+  ],
+  "--about-sidebar-bgcolor": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-color": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-bgcolor": [
+    "css"
+  ],
   "--about-content-bg": [
-    "Alex"
+    "Adam"
   ],
   "--about-content-color": [
-    "Alex"
+    "Adam"
   ],
   "--about-content-title-color": [
-    "Alex"
+    "Adam"
+  ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
   ],
   "--select-bgcolor": [
     "user"

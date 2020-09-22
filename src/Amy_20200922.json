@@ -1,14 +1,14 @@
 {
   "--font-color": [
-    "Adam",
+    "Amy",
+    "css",
     "global",
-    "user",
-    "css"
+    "user"
   ],
   "--bg-color": [
-    "Adam",
-    "user",
-    "css"
+    "Amy",
+    "css",
+    "user"
   ],
   "--header-bgcolor": [
     "css"
@@ -17,33 +17,32 @@
     "css"
   ],
   "--q-color-primary": [
-    "Adam",
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--q-color-positive": [
     "user"
   ],
   "--q-color-negative": [
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--activityTab-color": [
-    "Adam"
+    "Amy"
   ],
   "--activityTab-bgcolor": [
-    "Adam"
+    "Amy"
   ],
   "--activityTab-borderColor": [
-    "Adam"
+    "Amy"
   ],
   "--dialog-bgcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-fontcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-title-fontcolor": [
     "css"
@@ -63,22 +62,6 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--input-bgcolor": [
-    "user"
-  ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
-  ],
   "--about-sidebar-color": [
     "css"
   ],
@@ -92,13 +75,37 @@
     "css"
   ],
   "--about-content-bg": [
-    "Adam"
+    "css"
   ],
-  "--about-content-color": [
-    "Adam"
+  "--input-bgcolor": [
+    "css",
+    "user"
   ],
-  "--about-content-title-color": [
-    "Adam"
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
+  ],
+  "--menu-text-color": [
+    "css"
+  ],
+  "--menu-text-hover": [
+    "css"
+  ],
+  "--menu-boder-hover": [
+    "css"
+  ],
+  "--header-to-bg-color": [
+    "Amy",
+    "css"
   ],
   "--user-color": [
     "user"

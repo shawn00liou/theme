@@ -9,35 +9,84 @@ html[theme='light'] {
   --input-placeholder-fontcolor: inherit;
   // colors
   --q-color-primary: #1e83ff;
+  --q-color-secondary: #26a69a;
+  --q-color-accent: #9c27b0;
+  --q-color-dark: #1d1d1d;
   --q-color-positive: #2aa524;
   --q-color-negative: #d23546;
+  --q-color-info: #31ccec;
+  --q-color-warning: #f2c037;
+  --q-color-dark: #1d1d1d;
+
+  //主色
+  --primary-color: #00b2b2;
+  --primary-color-light: #4cc8cf;
+  --primary-color-dark: #0f7676;
+  --primary-color-opacity: rgba(1, 195, 195, 0.1);
+  //漸層色
+  --gradient-color: linear-gradient(to right, #00b2b2, #00ebcc);
   //
   --activityTab-color: #8996aa;
   --activityTab-bgcolor: #fff;
   --activityTab-borderColor: #1f212e;
 
+  //輔助色
+  --secondary-color: #2e2e36;
+  --secondary-color-light: #32333e;
+  --secondary-color-dark: #27272f;
+  --secondary-color-opacity: rgba(45, 45, 55, 0.5);
+  --promotions-htmlContent: #fff;
+
+  //強調色
+  --accent-color: #d62246;
+  --accent-color-light: #ee3b5b;
+  --accent-color-dark: #a01c36;
   --dialog-bgcolor: #fff;
   --dialog-fontcolor: #000;
   --dialog-title-fontcolor: var(--dialog-fontcolor);
   --dialog-title-fontsize: 18px;
 
+  //灰階
+  --grayscale-color: #7f7f7f;
+  --grayscale-color-light: #eeeeee;
+  --grayscale-color-dark: #454545;
+  --grayscale-color-opacity: rgba(210, 210, 210, 0.75);
   --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
   --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
   --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);
   --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit);
+
+  --userAvatar-link: var(--link-color);
+  --userAvatar-menu-color: var(--font-color);
+  --userAvatar-menu-bgcolor: var(--header-bgcolor);
+  --userAvatar-menu-shadow: $shadow-12;
+
   --about-sidebar-color: var(--font-color);
   --about-sidebar-bgcolor: #232635;
   --about-sidebar-itemActive-color: #fff;
   --about-sidebar-itemActive-bgcolor: #313445;
   --about-content-bg: rgba(255, 255, 255, 0.65);
+  --about-content-color: var(--font-color);
+  --about-content-title-color: #fff;
+
   --select-bgcolor: var(--input-bgcolor);
   --select-fontcolor: var(--input-fontcolor);
+
   // 使用者銀行卡管理
+  --user-bankcard-bgcolor: var(--bg-color);
+  --user-bankcard-color: #fff;
   // --- user ---
   // --- user ---
   // --- user ---
   --user-color: #000;
+  --user-color-attention: #000;
+  --user-color-dilute: #666;
+  --user-bgcolor: #fff;
+  --user-bgcolor-attention: #{rgba(grey, 0.2)};
+  --user-bgcolor-dilute: #313445;
   --user-card-color: #f4f4f4;
+  --user-btn-color: #bcbcbc;
+
   // sidebar
   --user-sidebar-bgcolor: #{rgba(grey, 0.2)};
   --user-sidebar--li-bgcolor--actived: var(--q-color-primary);
@@ -55,6 +104,7 @@ html[theme='light'] {
   --menu-text-hover: #fff;
   --menu-boder-hover: #fff;
   --header-to-bg-color: #{$grey-11};
+
   --table-bgcolor: transparent;
   --table-color: #2b2e3e;
   --table--header-bgcolor: #{$grey-3};

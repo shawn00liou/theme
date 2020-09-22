@@ -11,19 +11,14 @@ html[theme='light'] {
   --q-color-primary: #1e83ff;
   --q-color-positive: #2aa524;
   --q-color-negative: #d23546;
-  //主色
-  //漸層色
   //
   --activityTab-color: #8996aa;
   --activityTab-bgcolor: #fff;
   --activityTab-borderColor: #1f212e;
-  //輔助色
-  //強調色
   --dialog-bgcolor: #fff;
   --dialog-fontcolor: #000;
   --dialog-title-fontcolor: var(--dialog-fontcolor);
   --dialog-title-fontsize: 18px;
-  //灰階
   --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
   --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
   --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);

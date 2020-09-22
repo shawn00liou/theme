@@ -35,7 +35,7 @@ const path = require('path');
     }
   });
   const d = new Date();
-  const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+  const backupDate = '20200922'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
   //輸出四個樣版都有使用到的user
   filesJs.writeFile('user_' + backupDate + '.json', JSON.stringify(userDefault, null, 2), errorHandler);
   console.log(userDefault);

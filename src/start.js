@@ -8,12 +8,12 @@ const extend = require('extend');
  */
 
 //設定要讀哪一個樣板
-const checkThemeSitconfig = 'light';
+const checkThemeSitconfig = 'default'; //light
 
-// const checkTemplateTheme = 'template-adam';
-// const checkThemeSetting = 'Adam';
-const checkTemplateTheme = 'template-alex';
-const checkThemeSetting = 'Alex';
+const checkTemplateTheme = 'template-adam';
+const checkThemeSetting = 'Adam';
+// const checkTemplateTheme = 'template-alex';
+// const checkThemeSetting = 'Alex';
 // const checkTemplateTheme = 'template-amy';
 // const checkThemeSetting = 'Amy';
 // const checkTemplateTheme = 'template-anson';
@@ -109,7 +109,7 @@ const checkThemeSetting = 'Alex';
       });
     });
   });
-
+  //實際有用到的
   const themeJson = {};
   promise.then(() => {
     Object.keys(mapJSon).forEach((key) => {
@@ -145,13 +145,15 @@ const checkThemeSetting = 'Alex';
 
     //建立輸出日期
     const d = new Date();
-    const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+    const backupDate = '20200922'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
+    //實際全部樣板真正有用到的
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_key.json',
       JSON.stringify(Object.keys(themeJson).sort(), null, 2),
       errorHandler,
     );
+    //指定的樣板結構 ex amy light scss
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_defkey.json',
       JSON.stringify(Object.keys(currentJson).sort(), null, 2),

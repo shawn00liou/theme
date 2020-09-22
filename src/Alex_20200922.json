@@ -1,12 +1,12 @@
 {
   "--font-color": [
-    "Amy",
+    "Alex",
     "css",
     "global",
     "user"
   ],
   "--bg-color": [
-    "Amy",
+    "Alex",
     "css",
     "user"
   ],
@@ -17,7 +17,7 @@
     "css"
   ],
   "--q-color-primary": [
-    "css",
+    "Alex",
     "user"
   ],
   "--q-color-positive": [
@@ -28,13 +28,13 @@
     "user"
   ],
   "--activityTab-color": [
-    "Amy"
+    "Alex"
   ],
   "--activityTab-bgcolor": [
-    "Amy"
+    "Alex"
   ],
   "--activityTab-borderColor": [
-    "Amy"
+    "Alex"
   ],
   "--dialog-bgcolor": [
     "css",
@@ -62,20 +62,14 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--about-sidebar-color": [
-    "css"
-  ],
-  "--about-sidebar-bgcolor": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-color": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-bgcolor": [
-    "css"
-  ],
   "--about-content-bg": [
-    "css"
+    "Alex"
+  ],
+  "--about-content-color": [
+    "Alex"
+  ],
+  "--about-content-title-color": [
+    "Alex"
   ],
   "--input-fontcolor": [
     "css",
@@ -147,18 +141,5 @@
   ],
   "--table--gridcard-color": [
     "user"
-  ],
-  "--menu-text-color": [
-    "css"
-  ],
-  "--menu-text-hover": [
-    "css"
-  ],
-  "--menu-boder-hover": [
-    "css"
-  ],
-  "--header-to-bg-color": [
-    "Amy",
-    "css"
   ]
 }
