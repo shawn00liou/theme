@@ -16,6 +16,17 @@
   "--link-color": [
     "css"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
   "--q-color-primary": [
     "css",
     "user"
@@ -55,20 +66,6 @@
   ],
   "--about-content-bg": [
     "Anson"
-  ],
-  "--about-content-color": [
-    "Anson"
-  ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-bgcolor": [
-    "css",
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
   ],
   "--select-bgcolor": [
     "user"
@@ -169,5 +166,8 @@
   "--grayscale-color-opacity": [
     "Anson",
     "css"
+  ],
+  "--about-content-color": [
+    "Anson"
   ]
 }

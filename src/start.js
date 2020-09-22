@@ -227,7 +227,14 @@ const checkThemeSetting = 'Anson';
     });
     logger.write('html[theme] {\n');
 
-    extend(true, [], Object.keys(mapJSon), lineArray).forEach((key) => {
+    const outputArray = [...lineArray];
+    Object.keys(mapJSon).forEach((key) => {
+      if (lineArray.indexOf(key) === -1) {
+        console.log(key);
+        outputArray.push(key);
+      }
+    });
+    outputArray.forEach((key) => {
       if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
         logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
       } else {

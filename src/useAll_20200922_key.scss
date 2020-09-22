@@ -3,7 +3,7 @@ html[theme] {
   --bg-color: 
   --header-bgcolor: 
   --link-color:  var(--font-color);
-  --input-fontcolor:  var(--font-color);
+  --input-fontcolor: 
   --input-bgcolor: 
   --input-placeholder-fontcolor: 
   --q-color-primary: 
@@ -17,8 +17,8 @@ html[theme] {
   --secondary-color-dark: 
   --secondary-color-opacity: 
   --accent-color: 
-  --dialog-bgcolor:  var(--bg-color);
-  --dialog-fontcolor:  var(--font-color);
+  --dialog-bgcolor: 
+  --dialog-fontcolor: 
   --dialog-title-fontcolor:  var(--dialog-fontcolor);
   --dialog-title-fontsize:  18px;
   --grayscale-color: 
@@ -36,7 +36,7 @@ html[theme] {
   --user-color: 
   --user-card-color: 
   --user-sidebar-bgcolor: 
-  --user-sidebar--li-bgcolor--actived:  var(--q-color-negative);
+  --user-sidebar--li-bgcolor--actived:  var(--q-color-primary);
   --user-bankcard--card-bgcolor: 
   --user-bankcard--card-color: 
   --user-form--input-color:  var(--input-fontcolor);
@@ -51,22 +51,22 @@ html[theme] {
   --table--tr-odd-bgcolor: 
   --table--gridcard-bgcolor: 
   --table--gridcard-color: 
-  --table--gridcard-color: 
+  --activityTab-color: 
+  --activityTab-bgcolor: 
+  --activityTab-borderColor: 
+  --about-sidebar-color:  var(--font-color);
+  --about-sidebar-bgcolor: 
+  --about-sidebar-itemActive-color: 
+  --about-sidebar-itemActive-bgcolor: 
+  --menu-text-color: 
+  --menu-text-hover: 
+  --menu-boder-hover: 
+  --header-to-bg-color:  var(--bg-color);
+  --about-content-title-color: 
   --q-color-secondary: 
   --q-color-accent: 
   --q-color-dark: 
   --q-color-info: 
   --q-color-warning: 
-  --primary-color: 
-  --primary-color-opacity: 
-  --gradient-color: 
-  --secondary-color: 
-  --secondary-color-light: 
-  --secondary-color-dark: 
-  --secondary-color-opacity: 
-  --accent-color: 
-  --grayscale-color: 
-  --grayscale-color-light: 
-  --grayscale-color-dark: 
-  --grayscale-color-opacity: 
+  --promotions-htmlContent: 
 }
