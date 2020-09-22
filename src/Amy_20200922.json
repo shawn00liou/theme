@@ -62,21 +62,6 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--about-sidebar-color": [
-    "css"
-  ],
-  "--about-sidebar-bgcolor": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-color": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-bgcolor": [
-    "css"
-  ],
-  "--about-content-bg": [
-    "css"
-  ],
   "--input-bgcolor": [
     "css",
     "user"
@@ -93,6 +78,21 @@
   ],
   "--select-fontcolor": [
     "user"
+  ],
+  "--about-sidebar-color": [
+    "css"
+  ],
+  "--about-sidebar-bgcolor": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-color": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-bgcolor": [
+    "css"
+  ],
+  "--about-content-bg": [
+    "css"
   ],
   "--menu-text-color": [
     "css"

@@ -147,7 +147,15 @@ const checkThemeSetting = 'Adam';
     const d = new Date();
     const backupDate = '20200922'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
-    //實際全部樣板真正有用到的
+
+    //全部的key
+    filesJs.writeFile(
+      'useAll_' + backupDate + '_key.json',
+      JSON.stringify(Object.keys(mapJSon).sort(), null, 2),
+      errorHandler,
+    );
+
+    //實際這個樣板真正有用到的
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_key.json',
       JSON.stringify(Object.keys(themeJson).sort(), null, 2),
@@ -199,7 +207,7 @@ const checkThemeSetting = 'Adam';
 
     /** 新增還沒寫 因為新增也要寫對應的參數*/
     //
-    console.log('注意一下需要寫新增', addCurrentKeyList);
+    console.log('注意一下需要寫新增', addCurrentKeyList.length > 0 && addCurrentKeyList);
     //
     /** 輸出scss */
     filesJs.writeFile(
