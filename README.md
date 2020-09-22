@@ -29,3 +29,9 @@ sitepackage.frontend.master/src/components/user
 sitepackage.frontend.master/src/components/\_global
 
 sitepackage.frontend.master/src/components/模板專案
+
+## 本專案資料夾結構
+
+1.讀取樣板的基底
+
+src/theme/小寫樣板名 ex adam alex amy anson
