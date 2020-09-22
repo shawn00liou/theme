@@ -18,9 +18,11 @@ Template/
 
 ### 2.本解析專案資料夾
 
-工作資料夾/本專案/src/start.js
+工作資料夾/本專案/
 
-     /src/readUser.js
+    src/start.js
+
+    /src/readUser.js
 
 ### 3.工作專案資料夾
 
