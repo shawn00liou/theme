@@ -1,14 +1,14 @@
 {
   "--font-color": [
     "Amy",
+    "css",
     "global",
-    "user",
-    "css"
+    "user"
   ],
   "--bg-color": [
     "Amy",
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--header-bgcolor": [
     "css"
@@ -16,16 +16,27 @@
   "--link-color": [
     "css"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
   "--q-color-primary": [
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--q-color-positive": [
     "user"
   ],
   "--q-color-negative": [
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--activityTab-color": [
     "Amy"
@@ -37,12 +48,12 @@
     "Amy"
   ],
   "--dialog-bgcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-fontcolor": [
-    "global",
-    "css"
+    "css",
+    "global"
   ],
   "--dialog-title-fontcolor": [
     "css"
@@ -76,17 +87,6 @@
   ],
   "--about-content-bg": [
     "css"
-  ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-bgcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
   ],
   "--select-bgcolor": [
     "user"
@@ -124,6 +124,19 @@
   "--user-form--search-input-bgcolor": [
     "user"
   ],
+  "--menu-text-color": [
+    "css"
+  ],
+  "--menu-text-hover": [
+    "css"
+  ],
+  "--menu-boder-hover": [
+    "css"
+  ],
+  "--header-to-bg-color": [
+    "Amy",
+    "css"
+  ],
   "--table-bgcolor": [
     "user"
   ],
@@ -147,18 +160,5 @@
   ],
   "--table--gridcard-color": [
     "user"
-  ],
-  "--menu-text-color": [
-    "css"
-  ],
-  "--menu-text-hover": [
-    "css"
-  ],
-  "--menu-boder-hover": [
-    "css"
-  ],
-  "--header-to-bg-color": [
-    "Amy",
-    "css"
   ]
 }

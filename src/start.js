@@ -1,5 +1,6 @@
 const filesJs = require('./files.js');
 const path = require('path');
+const extend = require('extend');
 /**
  * start.js
  * 讀取Theme 生成json做分析
@@ -11,10 +12,10 @@ const path = require('path');
 // const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
-// const checkTemplateTheme = 'template-amy';
-// const checkThemeSetting = 'Amy';
-const checkTemplateTheme = 'template-anson';
-const checkThemeSetting = 'Anson';
+const checkTemplateTheme = 'template-amy';
+const checkThemeSetting = 'Amy';
+// const checkTemplateTheme = 'template-anson';
+// const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
@@ -27,8 +28,8 @@ const checkThemeSetting = 'Anson';
       }
     });
   });
-  //要核對的Css Template
 
+  //要核對的Css Template
   const templatefilelist = walkFilesSync(
     path.resolve('..', '..', '..', 'Template', checkTemplateTheme),
     (fname, dirname) => {
@@ -37,7 +38,7 @@ const checkThemeSetting = 'Anson';
     },
   );
 
-  //從Adam 去撈看看
+  //從Adam 樣板去撈看看
   const sitpackageModule = walkFilesSync(
     path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', checkThemeSetting),
     (fname, dirname) => {
@@ -126,7 +127,7 @@ const checkThemeSetting = 'Anson';
         }
       });
     });
-    console.log('sucess!!!', themeJson);
+    console.log('sucess!!!');
     //建立輸出日期
     const d = new Date();
     const backupDate = '20200921'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());

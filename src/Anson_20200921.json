@@ -1,14 +1,14 @@
 {
   "--font-color": [
     "Anson",
+    "css",
     "global",
-    "user",
-    "css"
+    "user"
   ],
   "--bg-color": [
     "Anson",
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--header-bgcolor": [
     "css"
@@ -16,58 +16,26 @@
   "--link-color": [
     "css"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "css",
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
   "--q-color-primary": [
-    "user",
-    "css"
+    "css",
+    "user"
   ],
   "--q-color-positive": [
     "user"
   ],
   "--q-color-negative": [
     "Anson",
-    "user"
-  ],
-  "--dialog-bgcolor": [
-    "global",
-    "css"
-  ],
-  "--dialog-fontcolor": [
-    "global",
-    "css"
-  ],
-  "--dialog-title-fontcolor": [
-    "css"
-  ],
-  "--dialog-title-fontsize": [
-    "css"
-  ],
-  "--loginForm-bgcolor": [
-    "user"
-  ],
-  "--loginForm-fontcolor": [
-    "user"
-  ],
-  "--loginForm-title-fontcolor": [
-    "user"
-  ],
-  "--loginForm-title-fontsize": [
-    "user"
-  ],
-  "--about-content-bg": [
-    "Anson"
-  ],
-  "--about-content-color": [
-    "Anson"
-  ],
-  "--input-fontcolor": [
-    "user",
-    "css"
-  ],
-  "--input-bgcolor": [
-    "user",
-    "css"
-  ],
-  "--input-placeholder-fontcolor": [
     "user"
   ],
   "--primary-color": [
@@ -95,6 +63,20 @@
   "--accent-color": [
     "css"
   ],
+  "--dialog-bgcolor": [
+    "css",
+    "global"
+  ],
+  "--dialog-fontcolor": [
+    "css",
+    "global"
+  ],
+  "--dialog-title-fontcolor": [
+    "css"
+  ],
+  "--dialog-title-fontsize": [
+    "css"
+  ],
   "--grayscale-color": [
     "Anson",
     "css"
@@ -109,6 +91,24 @@
   "--grayscale-color-opacity": [
     "Anson",
     "css"
+  ],
+  "--loginForm-bgcolor": [
+    "user"
+  ],
+  "--loginForm-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontsize": [
+    "user"
+  ],
+  "--about-content-bg": [
+    "Anson"
+  ],
+  "--about-content-color": [
+    "Anson"
   ],
   "--select-bgcolor": [
     "user"

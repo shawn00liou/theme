@@ -1,0 +1,23 @@
+{
+  "name": "themescss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn00liou/theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawn00liou/theme/issues"
+  },
+  "homepage": "https://github.com/shawn00liou/theme#readme",
+  "dependencies": {
+    "extend": "^3.0.2",
+    "fs-extra": "^9.0.1"
+  }
+}
