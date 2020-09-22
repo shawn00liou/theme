@@ -148,13 +148,6 @@ const checkThemeSetting = 'Adam';
     const backupDate = '20200922'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
 
-    //全部的key
-    filesJs.writeFile(
-      'useAll_' + backupDate + '_key.json',
-      JSON.stringify(Object.keys(mapJSon).sort(), null, 2),
-      errorHandler,
-    );
-
     //實際這個樣板真正有用到的
     filesJs.writeFile(
       checkThemeSetting + '_' + backupDate + '_key.json',
@@ -215,6 +208,24 @@ const checkThemeSetting = 'Adam';
       currentLine.filter((v) => v !== '').join('\n'),
       errorHandler,
     );
+
+    //全部的key 輸出一份scss
+    const logger = filesJs.createWriteStream(path.resolve('.', 'useAll_' + backupDate + '_key.scss'), {
+      flags: 'w', // 'a' means appending (old data will be preserved)
+    });
+    logger.write('html[theme] {\n');
+
+    Object.keys(mapJSon)
+      .sort()
+      .forEach((key) => {
+        if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
+          logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
+        } else {
+          logger.write(`  ${key}: \n`);
+        }
+      });
+    logger.write('}');
+    logger.end();
   });
 })();
 
