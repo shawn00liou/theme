@@ -8,7 +8,7 @@ const extend = require('extend');
  */
 
 //設定要讀哪一個樣板
-const checkThemeSitconfig = 'default'; //light
+const checkThemeSitconfig = 'default'; //light,default
 
 const checkTemplateTheme = 'template-adam';
 const checkThemeSetting = 'Adam';

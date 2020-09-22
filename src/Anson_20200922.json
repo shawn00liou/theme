@@ -16,49 +16,6 @@
   "--link-color": [
     "css"
   ],
-  "--q-color-primary": [
-    "css",
-    "user"
-  ],
-  "--q-color-positive": [
-    "user"
-  ],
-  "--q-color-negative": [
-    "Anson",
-    "user"
-  ],
-  "--dialog-bgcolor": [
-    "css",
-    "global"
-  ],
-  "--dialog-fontcolor": [
-    "css",
-    "global"
-  ],
-  "--dialog-title-fontcolor": [
-    "css"
-  ],
-  "--dialog-title-fontsize": [
-    "css"
-  ],
-  "--loginForm-bgcolor": [
-    "user"
-  ],
-  "--loginForm-fontcolor": [
-    "user"
-  ],
-  "--loginForm-title-fontcolor": [
-    "user"
-  ],
-  "--loginForm-title-fontsize": [
-    "user"
-  ],
-  "--about-content-bg": [
-    "Anson"
-  ],
-  "--about-content-color": [
-    "Anson"
-  ],
   "--input-fontcolor": [
     "css",
     "user"
@@ -68,6 +25,17 @@
     "user"
   ],
   "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--q-color-primary": [
+    "css",
+    "user"
+  ],
+  "--q-color-positive": [
+    "user"
+  ],
+  "--q-color-negative": [
+    "Anson",
     "user"
   ],
   "--primary-color": [
@@ -95,6 +63,20 @@
   "--accent-color": [
     "css"
   ],
+  "--dialog-bgcolor": [
+    "css",
+    "global"
+  ],
+  "--dialog-fontcolor": [
+    "css",
+    "global"
+  ],
+  "--dialog-title-fontcolor": [
+    "css"
+  ],
+  "--dialog-title-fontsize": [
+    "css"
+  ],
   "--grayscale-color": [
     "Anson",
     "css"
@@ -109,6 +91,24 @@
   "--grayscale-color-opacity": [
     "Anson",
     "css"
+  ],
+  "--loginForm-bgcolor": [
+    "user"
+  ],
+  "--loginForm-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontcolor": [
+    "user"
+  ],
+  "--loginForm-title-fontsize": [
+    "user"
+  ],
+  "--about-content-bg": [
+    "Anson"
+  ],
+  "--about-content-color": [
+    "Anson"
   ],
   "--select-bgcolor": [
     "user"
