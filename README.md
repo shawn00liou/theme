@@ -22,7 +22,7 @@ Template/
 
     src/start.js
 
-    /src/readUser.js
+    src/readUser.js
 
 ### 3.工作專案資料夾
 
