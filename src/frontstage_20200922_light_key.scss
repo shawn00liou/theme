@@ -1,42 +1,42 @@
 html[theme] {
-  --font-color: 
-  --bg-color: 
-  --header-bgcolor: 
+  --font-color: ;
+  --bg-color: ;
+  --header-bgcolor: ;
   --link-color:  var(--font-color);
-  --input-fontcolor:  var(--font-color);
-  --input-bgcolor: 
+  --input-fontcolor: ;
+  --input-bgcolor: ;
   --input-placeholder-fontcolor:  inherit;
-  --q-color-primary: 
-  --q-color-positive: 
-  --q-color-negative: 
-  --primary-color: 
-  --primary-color-opacity: 
-  --gradient-color: 
-  --secondary-color: 
-  --secondary-color-light: 
-  --secondary-color-dark: 
-  --secondary-color-opacity: 
-  --accent-color: 
-  --dialog-bgcolor:  var(--bg-color);
-  --dialog-fontcolor:  var(--font-color);
+  --q-color-primary: ;
+  --q-color-positive: ;
+  --q-color-negative: ;
+  --primary-color: ;
+  --primary-color-opacity: ;
+  --gradient-color: ;
+  --secondary-color: ;
+  --secondary-color-light: ;
+  --secondary-color-dark: ;
+  --secondary-color-opacity: ;
+  --accent-color: ;
+  --dialog-bgcolor: ;
+  --dialog-fontcolor: ;
   --dialog-title-fontcolor:  var(--dialog-fontcolor);
   --dialog-title-fontsize:  18px;
-  --grayscale-color: 
-  --grayscale-color-light: 
-  --grayscale-color-dark: 
-  --grayscale-color-opacity: 
+  --grayscale-color: ;
+  --grayscale-color-light: ;
+  --grayscale-color-dark: ;
+  --grayscale-color-opacity: ;
   --loginForm-bgcolor:  var(--dialog-bgcolor, inherit);
   --loginForm-fontcolor:  var(--dialog-fontcolor, inherit);
   --loginForm-title-fontcolor:  var(--dialog-title-fontcolor, inherit);
   --loginForm-title-fontsize:  var(--dialog-title-fontsize, inherit);
-  --about-content-bg: 
+  --about-content-bg: ;
   --about-content-color:  var(--font-color);
   --select-bgcolor:  var(--input-bgcolor);
   --select-fontcolor:  var(--input-fontcolor);
   --user-color:  #000;
-  --user-card-color: 
+  --user-card-color: ;
   --user-sidebar-bgcolor:  #{rgba(grey, 0.2)};
-  --user-sidebar--li-bgcolor--actived:  var(--q-color-negative);
+  --user-sidebar--li-bgcolor--actived:  var(--q-color-primary);
   --user-bankcard--card-bgcolor:  #{rgba(#000, 0.4)};
   --user-bankcard--card-color:  #fff;
   --user-form--input-color:  var(--input-fontcolor);
@@ -45,28 +45,28 @@ html[theme] {
   --user-form--search-input-bgcolor:  var(--input-bgcolor);
   --table-bgcolor:  transparent;
   --table-color:  #2b2e3e;
-  --table--header-bgcolor: 
+  --table--header-bgcolor: ;
   --table--header-color:  #2b2e3e;
   --table--tr-hover-color:  inherit;
-  --table--tr-odd-bgcolor: 
-  --table--gridcard-bgcolor: 
+  --table--tr-odd-bgcolor: ;
+  --table--gridcard-bgcolor: ;
   --table--gridcard-color:  #2b2e3e;
-  --activityTab-color: 
-  --activityTab-bgcolor: 
-  --activityTab-borderColor: 
-  --promotions-htmlContent: 
+  --activityTab-color: ;
+  --activityTab-bgcolor: ;
+  --activityTab-borderColor: ;
   --about-sidebar-color:  var(--font-color);
-  --about-sidebar-bgcolor: 
-  --about-sidebar-itemActive-color: 
-  --about-sidebar-itemActive-bgcolor: 
-  --about-content-title-color: 
-  --q-color-secondary: 
-  --q-color-accent: 
-  --q-color-dark: 
-  --q-color-info: 
-  --q-color-warning: 
-  --menu-text-color: 
-  --menu-text-hover: 
-  --menu-boder-hover: 
-  --header-to-bg-color: 
+  --about-sidebar-bgcolor: ;
+  --about-sidebar-itemActive-color: ;
+  --about-sidebar-itemActive-bgcolor: ;
+  --menu-text-color: ;
+  --menu-text-hover: ;
+  --menu-boder-hover: ;
+  --header-to-bg-color:  var(--bg-color);
+  --q-color-secondary: ;
+  --q-color-accent: ;
+  --q-color-dark: ;
+  --q-color-info: ;
+  --q-color-warning: ;
+  --promotions-htmlContent: ;
+  --about-content-title-color: ;
 }

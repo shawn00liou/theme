@@ -1,10 +1,10 @@
 [
+  "--input-placeholder-fontcolor",
   "--q-color-positive",
   "--loginForm-bgcolor",
   "--loginForm-fontcolor",
   "--loginForm-title-fontcolor",
   "--loginForm-title-fontsize",
-  "--input-placeholder-fontcolor",
   "--select-bgcolor",
   "--select-fontcolor",
   "--user-color",
