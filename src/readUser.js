@@ -75,7 +75,7 @@ const checkThemeSitconfig = 'light'; //light,default
     });
 
     if (confirmTheInformationIsTheSame == confirmDirPath.length) {
-      logger.write(`  ${key}: ${allThemeUserData['anson'][key][0]}\n`);
+      logger.write(`  ${key}:${allThemeUserData['anson'][key][0]}\n`);
     } else {
       logger.write(`  ${key}: ;\n`);
     }
