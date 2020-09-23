@@ -244,7 +244,7 @@ const checkThemeSetting = 'Anson';
 
     const outputArray = [...lineArray];
 
-    //因為Adam根本沒有亮版,所以遇到亮版就不判斷Adam
+    //因為目前adam user是沒有特別設定的,所以遇到亮版都忽略adam
     const confirmDirPath = checkThemeSitconfig === 'light' ? ['amy', 'anson', 'alex'] : dirpath;
     Object.keys(mapJSon).forEach((key) => {
       if (lineArray.indexOf(key) === -1) {

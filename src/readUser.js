@@ -55,9 +55,9 @@ const checkThemeSitconfig = 'light'; //light,default
     },
   );
   logger.write('html[theme] {\n');
-
+  //因為目前adam user是沒有特別設定的,所以遇到亮版都忽略adam
   const confirmDirPath = checkThemeSitconfig === 'light' ? ['amy', 'anson', 'alex'] : Object.keys(allThemeUserData);
-
+  const confirmDefault = checkThemeSitconfig === 'light' ? 'anson' : 'adam';
   userDefault.forEach((key) => {
     // console.log(key);
     var confirmTheInformationIsTheSame = 0;
@@ -75,7 +75,7 @@ const checkThemeSitconfig = 'light'; //light,default
     });
 
     if (confirmTheInformationIsTheSame == confirmDirPath.length) {
-      logger.write(`  ${key}:${allThemeUserData['anson'][key][0]}\n`);
+      logger.write(`  ${key}:${allThemeUserData[confirmDefault][key][0]}\n`);
     } else {
       logger.write(`  ${key}: ;\n`);
     }
