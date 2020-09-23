@@ -252,27 +252,27 @@ const checkThemeSetting = 'Anson';
       }
     });
     outputArray.forEach((key) => {
-      if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
+      // if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
+      // logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
+      // } else {
+      var confirmTheInformationIsTheSame = 0;
+      confirmDirPath.forEach((path, index) => {
+        const nextPath = confirmDirPath[(index + 1) % confirmDirPath.length];
+        try {
+          if (lightOrDefaultSetting[path][key][0] === lightOrDefaultSetting[nextPath][key][0]) {
+            confirmTheInformationIsTheSame++;
+          }
+        } catch (er) {
+          // 不存在 表示某一個樣板並沒有使用到這個key
+        }
+      });
+      //當全部樣板的同一個key都一樣 就放回去吧
+      if (confirmTheInformationIsTheSame == confirmDirPath.length) {
         logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
       } else {
-        var confirmTheInformationIsTheSame = 0;
-        confirmDirPath.forEach((path, index) => {
-          const nextPath = confirmDirPath[(index + 1) % confirmDirPath.length];
-          try {
-            if (lightOrDefaultSetting[path][key][0] === lightOrDefaultSetting[nextPath][key][0]) {
-              confirmTheInformationIsTheSame++;
-            }
-          } catch (er) {
-            // 不存在 表示某一個樣板並沒有使用到這個key
-          }
-        });
-        //當全部樣板的同一個key都一樣 就放回去吧
-        if (confirmTheInformationIsTheSame == confirmDirPath.length) {
-          logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
-        } else {
-          logger.write(`  ${key}: ;\n`);
-        }
+        logger.write(`  ${key}: ;\n`);
       }
+      // }
     });
     logger.write('}');
     logger.end();

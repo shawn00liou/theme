@@ -59,15 +59,21 @@
   "--about-content-color": [
     "Anson"
   ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
   "--input-bgcolor": [
     "css",
     "user"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
   "--input-placeholder-fontcolor": [
+    "user"
+  ],
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
     "user"
   ],
   "--primary-color": [
@@ -109,12 +115,6 @@
   "--grayscale-color-opacity": [
     "Anson",
     "css"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
   ],
   "--user-color": [
     "user"
