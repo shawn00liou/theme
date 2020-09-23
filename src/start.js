@@ -267,7 +267,7 @@ const checkThemeSetting = 'Anson';
           }
         });
         //當全部樣板的同一個key都一樣 就放回去吧
-        if (confirmTheInformationIsTheSame > confirmDirPath.length) {
+        if (confirmTheInformationIsTheSame == confirmDirPath.length) {
           logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
         } else {
           logger.write(`  ${key}: \n`);
