@@ -222,9 +222,13 @@ const checkThemeSetting = 'Anson';
       .filter((val) => val);
 
     // console.log('.......');
-    const logger = filesJs.createWriteStream(path.resolve('.', 'useAll_' + backupDate + '_key.scss'), {
-      flags: 'w', // 'a' means appending (old data will be preserved)
-    });
+    const checkThemeSitconfig = 'light'; //light,default
+    const logger = filesJs.createWriteStream(
+      path.resolve('.', 'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_key.scss'),
+      {
+        flags: 'w', // 'a' means appending (old data will be preserved)
+      },
+    );
     logger.write('html[theme] {\n');
 
     const outputArray = [...lineArray];
