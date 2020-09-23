@@ -23,7 +23,12 @@ const checkThemeSetting = 'Anson';
   console.log('init');
   const dirpath = ['adam', 'amy', 'anson', 'alex'];
   const themeFileList = [];
+  //區分 亮版 和 暗版 抓出全部模板中指定亮版 或是 暗版的Theme 值
+  const lightOrDefaultSetting = {};
+
   dirpath.forEach((dirname) => {
+    lightOrDefaultSetting[dirname] = lightOrDefaultSetting[dirname] || {};
+
     const scsslist = filesJs.readdirSync(path.resolve('.', 'theme', dirname)).forEach((element) => {
       if (/scss/.test(element) && element) {
         themeFileList.push(['.', 'theme', dirname, element]);
@@ -73,6 +78,7 @@ const checkThemeSetting = 'Anson';
   const currentJson = {};
   //本次執行的樣板 line 紀錄
   const currentLine = [];
+
   /** 2.把所有樣板要用的theme 設定抓回來 */
   const promise = new Promise((resolve, err) => {
     var countLoading = 0;
@@ -80,23 +86,30 @@ const checkThemeSetting = 'Anson';
       filesJs.readFile(path.resolve(...filepath), 'utf8', function (err, data) {
         const dataArray = data.split('\n');
 
+        //應該寫成索引表emun的,我實在是太懶了,很少用的東西就全部存一存成object mapping了
         dataArray.forEach((element, ind) => {
           if ([...element].includes(':')) {
             const ar = String(element).split(':');
             const key = ar[0];
+            const csskey = String(key).replace(/^\s+/, '');
+            const cssval = ar.slice(1, ar.length);
             /** 3.取回所有的設定key */
-            mapJSon[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
+            mapJSon[csskey] = cssval;
             //區分指定的樣板 theme key
             if (
               filepath.includes(checkThemeSetting.toLocaleLowerCase()) &&
-              filepath.toString().indexOf(checkThemeSitconfig) !== -1
+              filepath[3].indexOf(checkThemeSitconfig) !== -1
             ) {
-              currentJson[String(key).replace(/^\s+/, '')] = ar.slice(1, ar.length);
+              currentJson[csskey] = cssval;
+            }
+            //存一份指定亮版或暗版的表 ex [adam][--font-bg] = [val];
+            if (filepath[3].indexOf(checkThemeSitconfig) !== -1) {
+              lightOrDefaultSetting[filepath[2]][csskey] = cssval;
             }
           }
           if (
             filepath.includes(checkThemeSetting.toLocaleLowerCase()) &&
-            filepath.toString().indexOf(checkThemeSitconfig) !== -1
+            filepath[3].indexOf(checkThemeSitconfig) !== -1
           ) {
             currentLine[ind] = element;
           }
@@ -221,8 +234,6 @@ const checkThemeSetting = 'Anson';
       })
       .filter((val) => val);
 
-    // console.log('.......');
-
     const logger = filesJs.createWriteStream(
       path.resolve('.', 'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_key.scss'),
       {
@@ -232,9 +243,11 @@ const checkThemeSetting = 'Anson';
     logger.write('html[theme] {\n');
 
     const outputArray = [...lineArray];
+
+    //因為Adam根本沒有亮版,所以遇到亮版就不判斷Adam
+    const confirmDirPath = checkThemeSitconfig === 'light' ? ['amy', 'anson', 'alex'] : dirpath;
     Object.keys(mapJSon).forEach((key) => {
       if (lineArray.indexOf(key) === -1) {
-        console.log(key);
         outputArray.push(key);
       }
     });
@@ -242,7 +255,23 @@ const checkThemeSetting = 'Anson';
       if (mapJSon[key][0].indexOf('var(') !== -1 || mapJSon[key][0].indexOf('px') !== -1) {
         logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
       } else {
-        logger.write(`  ${key}: \n`);
+        var confirmTheInformationIsTheSame = 0;
+        confirmDirPath.forEach((path, index) => {
+          const nextPath = confirmDirPath[(index + 1) % confirmDirPath.length];
+          try {
+            if (lightOrDefaultSetting[path][key][0] === lightOrDefaultSetting[nextPath][key][0]) {
+              confirmTheInformationIsTheSame++;
+            }
+          } catch (er) {
+            // 不存在 表示某一個樣板並沒有使用到這個key
+          }
+        });
+        //當全部樣板的同一個key都一樣 就放回去吧
+        if (confirmTheInformationIsTheSame > confirmDirPath.length) {
+          logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
+        } else {
+          logger.write(`  ${key}: \n`);
+        }
       }
     });
     logger.write('}');
