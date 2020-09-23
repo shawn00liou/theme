@@ -222,7 +222,7 @@ const checkThemeSetting = 'Anson';
       .filter((val) => val);
 
     // console.log('.......');
-    const checkThemeSitconfig = 'light'; //light,default
+
     const logger = filesJs.createWriteStream(
       path.resolve('.', 'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_key.scss'),
       {
