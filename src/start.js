@@ -8,16 +8,16 @@ const extend = require('extend');
  */
 
 //設定要讀哪一個樣板
-const checkThemeSitconfig = 'light'; //light,default
+const checkThemeSitconfig = 'default'; //light,default
 
-// const checkTemplateTheme = 'template-adam';
-// const checkThemeSetting = 'Adam';
+const checkTemplateTheme = 'template-adam';
+const checkThemeSetting = 'Adam';
 // const checkTemplateTheme = 'template-alex';
 // const checkThemeSetting = 'Alex';
 // const checkTemplateTheme = 'template-amy';
 // const checkThemeSetting = 'Amy';
-const checkTemplateTheme = 'template-anson';
-const checkThemeSetting = 'Anson';
+// const checkTemplateTheme = 'template-anson';
+// const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
