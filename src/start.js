@@ -270,7 +270,7 @@ const checkThemeSetting = 'Anson';
         if (confirmTheInformationIsTheSame == confirmDirPath.length) {
           logger.write(`  ${key}: ${mapJSon[key][0]}\n`);
         } else {
-          logger.write(`  ${key}: \n`);
+          logger.write(`  ${key}: ;\n`);
         }
       }
     });
