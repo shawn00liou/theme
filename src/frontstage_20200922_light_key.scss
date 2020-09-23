@@ -3,7 +3,7 @@ html[theme] {
   --bg-color: ;
   --header-bgcolor: ;
   --link-color:  var(--font-color);
-  --input-fontcolor: ;
+  --input-fontcolor:  var(--font-color);
   --input-bgcolor: ;
   --input-placeholder-fontcolor:  inherit;
   --q-color-primary: ;
@@ -17,8 +17,8 @@ html[theme] {
   --secondary-color-dark: ;
   --secondary-color-opacity: ;
   --accent-color: ;
-  --dialog-bgcolor: ;
-  --dialog-fontcolor: ;
+  --dialog-bgcolor:  var(--bg-color);
+  --dialog-fontcolor:  var(--font-color);
   --dialog-title-fontcolor:  var(--dialog-fontcolor);
   --dialog-title-fontsize:  18px;
   --grayscale-color: ;
@@ -36,7 +36,7 @@ html[theme] {
   --user-color:  #000;
   --user-card-color: ;
   --user-sidebar-bgcolor:  #{rgba(grey, 0.2)};
-  --user-sidebar--li-bgcolor--actived:  var(--q-color-primary);
+  --user-sidebar--li-bgcolor--actived:  var(--q-color-negative);
   --user-bankcard--card-bgcolor:  #{rgba(#000, 0.4)};
   --user-bankcard--card-color:  #fff;
   --user-form--input-color:  var(--input-fontcolor);
@@ -54,19 +54,19 @@ html[theme] {
   --activityTab-color: ;
   --activityTab-bgcolor: ;
   --activityTab-borderColor: ;
+  --promotions-htmlContent: ;
   --about-sidebar-color:  var(--font-color);
   --about-sidebar-bgcolor: ;
   --about-sidebar-itemActive-color: ;
   --about-sidebar-itemActive-bgcolor: ;
-  --menu-text-color: ;
-  --menu-text-hover: ;
-  --menu-boder-hover: ;
-  --header-to-bg-color:  var(--bg-color);
+  --about-content-title-color: ;
   --q-color-secondary: ;
   --q-color-accent: ;
   --q-color-dark: ;
   --q-color-info: ;
   --q-color-warning: ;
-  --promotions-htmlContent: ;
-  --about-content-title-color: ;
+  --menu-text-color: ;
+  --menu-text-hover: ;
+  --menu-boder-hover: ;
+  --header-to-bg-color: ;
 }

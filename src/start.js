@@ -29,7 +29,7 @@ const checkThemeSetting = 'Anson';
   dirpath.forEach((dirname) => {
     lightOrDefaultSetting[dirname] = lightOrDefaultSetting[dirname] || {};
 
-    const scsslist = filesJs.readdirSync(path.resolve('.', 'theme', dirname)).forEach((element) => {
+    filesJs.readdirSync(path.resolve('.', 'theme', dirname)).forEach((element) => {
       if (/scss/.test(element) && element) {
         themeFileList.push(['.', 'theme', dirname, element]);
       }
@@ -162,17 +162,17 @@ const checkThemeSetting = 'Anson';
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
 
     //實際這個樣板真正有用到的
-    filesJs.writeFile(
-      checkThemeSetting + '_' + backupDate + '_key.json',
-      JSON.stringify(Object.keys(themeJson).sort(), null, 2),
-      errorHandler,
-    );
+    // filesJs.writeFile(
+    //   checkThemeSetting + '_' + backupDate + '_key.json',
+    //   JSON.stringify(Object.keys(themeJson).sort(), null, 2),
+    //   errorHandler,
+    // );
     //指定的樣板結構 ex amy light scss
-    filesJs.writeFile(
-      checkThemeSetting + '_' + backupDate + '_defkey.json',
-      JSON.stringify(Object.keys(currentJson).sort(), null, 2),
-      errorHandler,
-    );
+    // filesJs.writeFile(
+    //   checkThemeSetting + '_' + backupDate + '_defkey.json',
+    //   JSON.stringify(Object.keys(currentJson).sort(), null, 2),
+    //   errorHandler,
+    // );
     //從樣板內過濾出只用一次的user key
     const userJson = [];
     Object.keys(themeJson).forEach((val) => {
@@ -184,11 +184,11 @@ const checkThemeSetting = 'Anson';
         }
       }
     });
-    filesJs.writeFile(
-      checkThemeSetting + '_' + backupDate + '_user.json',
-      JSON.stringify(userJson, null, 2),
-      errorHandler,
-    );
+    // filesJs.writeFile(
+    //   checkThemeSetting + '_' + backupDate + '_user.json',
+    //   JSON.stringify(userJson, null, 2),
+    //   errorHandler,
+    // );
     /** 5.從目前在用的theme 去 比對實際有用的  抓出多餘的 */
     const delCurrentKeyList = Object.keys(currentJson).filter((key) => {
       if (!Object.keys(themeJson).includes(key)) {

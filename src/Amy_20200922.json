@@ -62,23 +62,6 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--input-bgcolor": [
-    "css",
-    "user"
-  ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
-  ],
   "--about-sidebar-color": [
     "css"
   ],
@@ -94,18 +77,22 @@
   "--about-content-bg": [
     "css"
   ],
-  "--menu-text-color": [
-    "css"
+  "--input-fontcolor": [
+    "css",
+    "user"
   ],
-  "--menu-text-hover": [
-    "css"
+  "--input-bgcolor": [
+    "css",
+    "user"
   ],
-  "--menu-boder-hover": [
-    "css"
+  "--input-placeholder-fontcolor": [
+    "user"
   ],
-  "--header-to-bg-color": [
-    "Amy",
-    "css"
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
   ],
   "--user-color": [
     "user"
@@ -136,6 +123,19 @@
   ],
   "--user-form--search-input-bgcolor": [
     "user"
+  ],
+  "--menu-text-color": [
+    "css"
+  ],
+  "--menu-text-hover": [
+    "css"
+  ],
+  "--menu-boder-hover": [
+    "css"
+  ],
+  "--header-to-bg-color": [
+    "Amy",
+    "css"
   ],
   "--table-bgcolor": [
     "user"

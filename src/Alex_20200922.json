@@ -62,20 +62,11 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--about-content-bg": [
-    "Alex"
-  ],
-  "--about-content-color": [
-    "Alex"
-  ],
-  "--about-content-title-color": [
-    "Alex"
-  ],
-  "--input-fontcolor": [
+  "--input-bgcolor": [
     "css",
     "user"
   ],
-  "--input-bgcolor": [
+  "--input-fontcolor": [
     "css",
     "user"
   ],
@@ -87,6 +78,15 @@
   ],
   "--select-fontcolor": [
     "user"
+  ],
+  "--about-content-bg": [
+    "Alex"
+  ],
+  "--about-content-color": [
+    "Alex"
+  ],
+  "--about-content-title-color": [
+    "Alex"
   ],
   "--user-color": [
     "user"
