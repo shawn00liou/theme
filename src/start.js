@@ -184,11 +184,11 @@ const checkThemeSetting = 'Anson';
         }
       }
     });
-    // filesJs.writeFile(
-    //   checkThemeSetting + '_' + backupDate + '_user.json',
-    //   JSON.stringify(userJson, null, 2),
-    //   errorHandler,
-    // );
+    filesJs.writeFile(
+      checkThemeSetting + '_' + backupDate + '_user.json',
+      JSON.stringify(userJson, null, 2),
+      errorHandler,
+    );
     /** 5.從目前在用的theme 去 比對實際有用的  抓出多餘的 */
     const delCurrentKeyList = Object.keys(currentJson).filter((key) => {
       if (!Object.keys(themeJson).includes(key)) {
@@ -276,6 +276,13 @@ const checkThemeSetting = 'Anson';
     });
     logger.write('}');
     logger.end();
+
+    //存一份 lightOrDefaultSetting
+    filesJs.writeFile(
+      'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_json.json',
+      JSON.stringify(lightOrDefaultSetting, null, 2),
+      errorHandler,
+    );
   });
 })();
 

@@ -1,4 +1,5 @@
 [
+  "--input-bgcolor",
   "--input-placeholder-fontcolor",
   "--q-color-positive",
   "--loginForm-bgcolor",

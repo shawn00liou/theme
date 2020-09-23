@@ -16,6 +16,16 @@
   "--link-color": [
     "css"
   ],
+  "--input-fontcolor": [
+    "css",
+    "user"
+  ],
+  "--input-bgcolor": [
+    "user"
+  ],
+  "--input-placeholder-fontcolor": [
+    "user"
+  ],
   "--q-color-primary": [
     "Adam",
     "css",
@@ -27,15 +37,6 @@
   "--q-color-negative": [
     "css",
     "user"
-  ],
-  "--activityTab-color": [
-    "Adam"
-  ],
-  "--activityTab-bgcolor": [
-    "Adam"
-  ],
-  "--activityTab-borderColor": [
-    "Adam"
   ],
   "--dialog-bgcolor": [
     "css",
@@ -63,42 +64,17 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--input-bgcolor": [
-    "user"
-  ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
-  "--select-bgcolor": [
-    "user"
-  ],
-  "--select-fontcolor": [
-    "user"
-  ],
-  "--about-sidebar-color": [
-    "css"
-  ],
-  "--about-sidebar-bgcolor": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-color": [
-    "css"
-  ],
-  "--about-sidebar-itemActive-bgcolor": [
-    "css"
-  ],
   "--about-content-bg": [
     "Adam"
   ],
   "--about-content-color": [
     "Adam"
   ],
-  "--about-content-title-color": [
-    "Adam"
+  "--select-bgcolor": [
+    "user"
+  ],
+  "--select-fontcolor": [
+    "user"
   ],
   "--user-color": [
     "user"
@@ -153,5 +129,29 @@
   ],
   "--table--gridcard-color": [
     "user"
+  ],
+  "--activityTab-color": [
+    "Adam"
+  ],
+  "--activityTab-bgcolor": [
+    "Adam"
+  ],
+  "--activityTab-borderColor": [
+    "Adam"
+  ],
+  "--about-content-title-color": [
+    "Adam"
+  ],
+  "--about-sidebar-color": [
+    "css"
+  ],
+  "--about-sidebar-bgcolor": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-color": [
+    "css"
+  ],
+  "--about-sidebar-itemActive-bgcolor": [
+    "css"
   ]
 }

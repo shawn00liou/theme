@@ -1,0 +1,28 @@
+html[theme] {
+  --input-placeholder-fontcolor:  inherit;
+  --q-color-positive: ;
+  --loginForm-bgcolor:  var(--dialog-bgcolor, inherit);
+  --loginForm-fontcolor:  var(--dialog-fontcolor, inherit);
+  --loginForm-title-fontcolor:  var(--dialog-title-fontcolor, inherit);
+  --loginForm-title-fontsize:  var(--dialog-title-fontsize, inherit);
+  --select-bgcolor:  var(--input-bgcolor);
+  --select-fontcolor:  var(--input-fontcolor);
+  --user-color:  #000;
+  --user-card-color: ;
+  --user-sidebar-bgcolor:  #{rgba(grey, 0.2)};
+  --user-sidebar--li-bgcolor--actived: ;
+  --user-bankcard--card-bgcolor:  #{rgba(#000, 0.4)};
+  --user-bankcard--card-color:  #fff;
+  --user-form--input-color:  var(--input-fontcolor);
+  --user-form--input-bgcolor:  var(--input-bgcolor);
+  --user-form--search-input-color:  var(--input-fontcolor);
+  --user-form--search-input-bgcolor:  var(--input-bgcolor);
+  --table-bgcolor:  transparent;
+  --table-color:  #2b2e3e;
+  --table--header-bgcolor: ;
+  --table--header-color:  #2b2e3e;
+  --table--tr-hover-color:  inherit;
+  --table--tr-odd-bgcolor: ;
+  --table--gridcard-bgcolor: ;
+  --table--gridcard-color:  #2b2e3e;
+}

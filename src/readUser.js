@@ -6,6 +6,7 @@ const path = require('path');
  *
  *
  */
+const checkThemeSitconfig = 'light'; //light,default
 
 (async function () {
   console.log('read init');
@@ -39,6 +40,48 @@ const path = require('path');
   //輸出四個樣版都有使用到的user
   filesJs.writeFile('user_' + backupDate + '.json', JSON.stringify(userDefault, null, 2), errorHandler);
   console.log(userDefault);
+
+  const allThemeUserData = JSON.parse(
+    filesJs.readFileSync(
+      path.resolve('.', 'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_json.json'),
+      'utf8',
+    ),
+  );
+
+  const logger = filesJs.createWriteStream(
+    path.resolve('.', 'frontstage_' + backupDate + '_' + checkThemeSitconfig + '_User.scss'),
+    {
+      flags: 'w', // 'a' means appending (old data will be preserved)
+    },
+  );
+  logger.write('html[theme] {\n');
+
+  const confirmDirPath = checkThemeSitconfig === 'light' ? ['amy', 'anson', 'alex'] : Object.keys(allThemeUserData);
+
+  userDefault.forEach((key) => {
+    // console.log(key);
+    var confirmTheInformationIsTheSame = 0;
+
+    confirmDirPath.forEach((path, index) => {
+      const nextPath = confirmDirPath[(index + 1) % confirmDirPath.length];
+      try {
+        if (allThemeUserData[path][key][0] === allThemeUserData[nextPath][key][0]) {
+          // console.log(key, '///', allThemeUserData[nextPath][key][0]);
+          confirmTheInformationIsTheSame++;
+        }
+      } catch (er) {
+        // 不存在 表示某一個樣板並沒有使用到這個key
+      }
+    });
+
+    if (confirmTheInformationIsTheSame == confirmDirPath.length) {
+      logger.write(`  ${key}: ${allThemeUserData['anson'][key][0]}\n`);
+    } else {
+      logger.write(`  ${key}: ;\n`);
+    }
+  });
+  logger.write('}');
+  logger.end();
 })();
 
 function errorHandler(err) {

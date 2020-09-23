@@ -59,16 +59,56 @@
   "--about-content-color": [
     "Anson"
   ],
-  "--input-bgcolor": [
+  "--input-fontcolor": [
     "css",
     "user"
   ],
-  "--input-fontcolor": [
+  "--input-bgcolor": [
     "css",
     "user"
   ],
   "--input-placeholder-fontcolor": [
     "user"
+  ],
+  "--primary-color": [
+    "Anson",
+    "css"
+  ],
+  "--primary-color-opacity": [
+    "Anson"
+  ],
+  "--gradient-color": [
+    "css"
+  ],
+  "--secondary-color": [
+    "css"
+  ],
+  "--secondary-color-light": [
+    "css"
+  ],
+  "--secondary-color-dark": [
+    "css"
+  ],
+  "--secondary-color-opacity": [
+    "css"
+  ],
+  "--accent-color": [
+    "css"
+  ],
+  "--grayscale-color": [
+    "Anson",
+    "css"
+  ],
+  "--grayscale-color-light": [
+    "Anson",
+    "css"
+  ],
+  "--grayscale-color-dark": [
+    "css"
+  ],
+  "--grayscale-color-opacity": [
+    "Anson",
+    "css"
   ],
   "--select-bgcolor": [
     "user"
@@ -129,45 +169,5 @@
   ],
   "--table--gridcard-color": [
     "user"
-  ],
-  "--primary-color": [
-    "Anson",
-    "css"
-  ],
-  "--primary-color-opacity": [
-    "Anson"
-  ],
-  "--gradient-color": [
-    "css"
-  ],
-  "--secondary-color": [
-    "css"
-  ],
-  "--secondary-color-light": [
-    "css"
-  ],
-  "--secondary-color-dark": [
-    "css"
-  ],
-  "--secondary-color-opacity": [
-    "css"
-  ],
-  "--accent-color": [
-    "css"
-  ],
-  "--grayscale-color": [
-    "Anson",
-    "css"
-  ],
-  "--grayscale-color-light": [
-    "Anson",
-    "css"
-  ],
-  "--grayscale-color-dark": [
-    "css"
-  ],
-  "--grayscale-color-opacity": [
-    "Anson",
-    "css"
   ]
 }
