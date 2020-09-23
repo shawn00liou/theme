@@ -53,6 +53,12 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
+  "--about-content-bg": [
+    "Anson"
+  ],
+  "--about-content-color": [
+    "Anson"
+  ],
   "--input-bgcolor": [
     "css",
     "user"
@@ -69,12 +75,6 @@
   ],
   "--select-fontcolor": [
     "user"
-  ],
-  "--about-content-bg": [
-    "Anson"
-  ],
-  "--about-content-color": [
-    "Anson"
   ],
   "--primary-color": [
     "Anson",

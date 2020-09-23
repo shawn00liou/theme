@@ -5,7 +5,7 @@ html[theme] {
   --link-color:  var(--font-color);
   --input-fontcolor:  var(--font-color);
   --input-bgcolor: 
-  --input-placeholder-fontcolor: 
+  --input-placeholder-fontcolor:  inherit;
   --q-color-primary: 
   --q-color-positive: 
   --q-color-negative: 
@@ -33,29 +33,24 @@ html[theme] {
   --about-content-color:  var(--font-color);
   --select-bgcolor:  var(--input-bgcolor);
   --select-fontcolor:  var(--input-fontcolor);
-  --user-color: 
+  --user-color:  #000;
   --user-card-color: 
-  --user-sidebar-bgcolor: 
+  --user-sidebar-bgcolor:  #{rgba(grey, 0.2)};
   --user-sidebar--li-bgcolor--actived:  var(--q-color-negative);
-  --user-bankcard--card-bgcolor: 
-  --user-bankcard--card-color: 
+  --user-bankcard--card-bgcolor:  #{rgba(#000, 0.4)};
+  --user-bankcard--card-color:  #fff;
   --user-form--input-color:  var(--input-fontcolor);
   --user-form--input-bgcolor:  var(--input-bgcolor);
   --user-form--search-input-color:  var(--input-fontcolor);
   --user-form--search-input-bgcolor:  var(--input-bgcolor);
-  --table-bgcolor: 
-  --table-color: 
+  --table-bgcolor:  transparent;
+  --table-color:  #2b2e3e;
   --table--header-bgcolor: 
-  --table--header-color: 
-  --table--tr-hover-color: 
+  --table--header-color:  #2b2e3e;
+  --table--tr-hover-color:  inherit;
   --table--tr-odd-bgcolor: 
   --table--gridcard-bgcolor: 
-  --table--gridcard-color: 
-  --q-color-secondary: 
-  --q-color-accent: 
-  --q-color-dark: 
-  --q-color-info: 
-  --q-color-warning: 
+  --table--gridcard-color:  #2b2e3e;
   --activityTab-color: 
   --activityTab-bgcolor: 
   --activityTab-borderColor: 
@@ -65,6 +60,11 @@ html[theme] {
   --about-sidebar-itemActive-color: 
   --about-sidebar-itemActive-bgcolor: 
   --about-content-title-color: 
+  --q-color-secondary: 
+  --q-color-accent: 
+  --q-color-dark: 
+  --q-color-info: 
+  --q-color-warning: 
   --menu-text-color: 
   --menu-text-hover: 
   --menu-boder-hover: 
