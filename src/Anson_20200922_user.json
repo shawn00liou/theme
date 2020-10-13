@@ -1,5 +1,4 @@
 [
-  "--q-color-positive",
   "--loginForm-bgcolor",
   "--loginForm-fontcolor",
   "--loginForm-title-fontcolor",
@@ -7,6 +6,7 @@
   "--input-placeholder-fontcolor",
   "--select-bgcolor",
   "--select-fontcolor",
+  "--q-color-positive",
   "--user-color",
   "--user-card-color",
   "--user-sidebar-bgcolor",

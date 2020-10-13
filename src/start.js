@@ -21,7 +21,7 @@ const checkThemeSetting = 'Anson';
 
 (async function () {
   console.log('init');
-  const dirpath = ['adam', 'amy', 'anson', 'alex'];
+  const dirpath = ['adam', 'amy', 'anson', 'alex','adi'];
   const themeFileList = [];
   //區分 亮版 和 暗版 抓出全部模板中指定亮版 或是 暗版的Theme 值
   const lightOrDefaultSetting = {};
@@ -47,7 +47,7 @@ const checkThemeSetting = 'Anson';
 
   //從Adam 樣板去撈看看
   const sitpackageModule = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', checkThemeSetting),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', checkThemeSetting),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);
@@ -56,7 +56,7 @@ const checkThemeSetting = 'Anson';
 
   //從_global 去撈看看
   const sitpackageComponents = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', '_global'),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', '_global'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);
@@ -64,7 +64,7 @@ const checkThemeSetting = 'Anson';
   );
   //從user 去撈看看
   const sitpackageUser = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.master', 'src', 'components', 'user'),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', 'user'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);

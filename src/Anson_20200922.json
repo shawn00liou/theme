@@ -10,22 +10,11 @@
     "css",
     "user"
   ],
-  "--header-bgcolor": [
-    "css"
-  ],
   "--link-color": [
     "css"
   ],
-  "--q-color-primary": [
-    "css",
-    "user"
-  ],
-  "--q-color-positive": [
-    "user"
-  ],
-  "--q-color-negative": [
-    "Anson",
-    "user"
+  "--header-bgcolor": [
+    "css"
   ],
   "--dialog-bgcolor": [
     "css",
@@ -53,12 +42,6 @@
   "--loginForm-title-fontsize": [
     "user"
   ],
-  "--about-content-bg": [
-    "Anson"
-  ],
-  "--about-content-color": [
-    "Anson"
-  ],
   "--input-bgcolor": [
     "css",
     "user"
@@ -74,6 +57,23 @@
     "user"
   ],
   "--select-fontcolor": [
+    "user"
+  ],
+  "--about-content-bg": [
+    "Anson"
+  ],
+  "--about-content-color": [
+    "Anson"
+  ],
+  "--q-color-primary": [
+    "css",
+    "user"
+  ],
+  "--q-color-positive": [
+    "user"
+  ],
+  "--q-color-negative": [
+    "Anson",
     "user"
   ],
   "--primary-color": [

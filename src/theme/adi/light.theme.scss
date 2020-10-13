@@ -1,0 +1,73 @@
+html[theme] {
+  --font-color: #22262a;
+  --bg-color: #fafafb;
+  --header-bgcolor: #ffffff;
+  --link-color: var(--font-color);
+  --content-color: #808080;
+  --current-color: #90a0b3;
+  --hover-color: #525b66;
+  --date-color: #bfbfbf;
+  --border-color: #e4e5e7;
+
+  /** Quasar(--q-)的預設值設定，也可以修改裡面的"值"*/
+  --q-color-primary: #ff9933;
+  --q-color-secondary: #138808;
+  --q-color-accent: #704ee3;
+  --q-color-dark: #1d1d1d;
+
+  --input-fontcolor: var(--font-color);
+  --input-bgcolor: #fff;
+  --input-placeholder-fontcolor: inherit;
+
+  --q-color-positive: #2aa524;
+  --q-color-negative: #c10015;
+  --q-color-info: #030381;
+  --q-color-warning: #ff4858;
+  //
+  --activityTab-color: #8996aa;
+  --activityTab-bgcolor: #313445;
+  --activityTab-borderColor: #1f212e;
+
+  --dialog-bgcolor: var(--bg-color);
+  --dialog-fontcolor: var(--font-color);
+  --dialog-title-fontcolor: var(--dialog-fontcolor);
+  --dialog-title-fontsize: 18px;
+  //灰階
+  --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
+  --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
+  --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);
+  --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit);
+  --about-content-bg: rgba(35, 38, 53, 0.5);
+  --about-content-color: var(--font-color);
+  --about-content-title-color: #fff;
+  --select-bgcolor: var(--input-bgcolor);
+  --select-fontcolor: var(--input-fontcolor);
+  // 使用者銀行卡管理
+  // --- user ---
+  // --- user ---
+  // --- user ---
+  --user-attention-color: var(--font-color);
+  --user-color: #000;
+  --user-card-color: #f4f4f4;
+  --user-btn-color: var(--q-color-primary);
+  // sidebar
+  --user-sidebar-bgcolor: #{rgba(grey, 0.2)};
+  --user-sidebar--li-bgcolor--actived: var(--q-color-primary);
+  // 使用者銀行卡片
+  --user-bankcard--card-bgcolor: #{rgba(#000, 0.4)};
+  --user-bankcard--card-color: #fff;
+  // 一般input
+  --user-form--input-color: var(--input-fontcolor);
+  --user-form--input-bgcolor: var(--input-bgcolor);
+  // 搜尋bar有不同的顏色
+  --user-form--search-input-color: var(--input-fontcolor);
+  --user-form--search-input-bgcolor: var(--input-bgcolor);
+  --table-bgcolor: transparent;
+  --table-color: #2b2e3e;
+  --table--header-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--header-color: #2b2e3e;
+  --table--tr-hover-color: inherit;
+  --table--tr-odd-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--gridcard-bgcolor: rgba(210, 210, 210, 0.75);
+  --table--gridcard-color: #2b2e3e;
+}

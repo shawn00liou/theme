@@ -1,54 +1,65 @@
 html[theme] {
-  // basic
-  --font-color: #8996aa;
-  --bg-color: #15151b;
-  --header-bgcolor: #0b0f21;
-  --link-color: var(--font-color);
-
   // colors
-  --q-color-primary: #1e83ff;
-  --q-color-secondary: #26a69a;
-  --q-color-accent: #9c27b0;
-  --q-color-dark: #1d1d1d;
-  --q-color-positive: #2aa524;
-  --q-color-negative: #d23546;
-  --q-color-info: #31ccec;
-  --q-color-warning: #f2c037;
+  // --q-color-primary: #ffeb00;
+  // --q-color-secondary: #ffda61;
+  // --q-color-accent: #6c08ff;
+  // --q-color-positive: #33bd53;
+  // --q-color-negative: #ff3b3b;
+  // --q-color-info: #21b4ff;
+  // --q-color-warning: #ff2b75;
+  // --q-color-dark: #0f0f0f;
+  --main-color: #ffeb3b;
 
-  //
-  --activityTab-color: #8996aa;
-  --activityTab-bgcolor: #313445;
-  --activityTab-borderColor: #1f212e;
+  // basic
+  --font-color: #{rgba(#fff, 0.75)};
+  --bg-color: #{rgba(#0f0f0f, 0.95)};
 
-  --promotions-htmlContent: #fff;
+  --link-color: #{rgba(#fff, 0.55)};
+  --header-bgcolor: #{rgba(#0f0f0f, 0.45)}; //主選單背景
 
-  --dialog-bgcolor: #1d1e28;
-  --dialog-fontcolor: #fff;
+  //優惠活動Tab
+  --activityTab-color: var(--q-color-dark);
+  --activityTab-active-color: var(--q-color-dark); //新增項目：文字、底線
+  --activityTab-active-bgcolor: var(--q-color-primary); //新增項目：背景色
+  --activityTab-bgcolor: #{rgba(#f4f4f4, 0.75)};
+  --activityTab-borderColor: #{rgba(#000, 0.15)};
+
+  //彈窗
+  --dialog-bgcolor: var(--q-color-dark);
+  --dialog-fontcolor: var(--font-color);
   --dialog-title-fontcolor: var(--dialog-fontcolor);
   --dialog-title-fontsize: 18px;
 
+  //登入與註冊
   --loginForm-bgcolor: var(--dialog-bgcolor, inherit);
   --loginForm-fontcolor: var(--dialog-fontcolor, inherit);
   --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit);
   --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit);
 
-  --input-bgcolor: #2e3136;
-  --input-fontcolor: #8996aa;
+  --input-bgcolor: #383838;
+  --input-fontcolor: #aaaaaa;
   --input-placeholder-fontcolor: inherit;
 
   --select-bgcolor: var(--input-bgcolor);
   --select-fontcolor: var(--input-fontcolor);
 
+  //關於我們 側邊攔.sidebar
   --about-sidebar-color: var(--font-color);
-  --about-sidebar-bgcolor: #232635;
-  --about-sidebar-itemActive-color: #fff;
-  --about-sidebar-itemActive-bgcolor: #313445;
-  --about-content-bg: rgba(35, 38, 53, 0.5);
+  --about-sidebar-bgcolor: var(--q-color-dark);
+  --about-sidebar-itemActive-color: var(--q-color-dark); //沒作用?
+  --about-sidebar-itemActive-bgcolor: var(--q-color-primary); //沒作用?
+
+  //關於我們 內容.about-content
+  --about-content-bg: var(--bg-color);
   --about-content-color: var(--font-color);
-  --about-content-title-color: #fff;
+  --about-content-title-color: var(--font-color);
+
+  //footer背景、最上方公告背景：命名
+  --header-to-bg-color: #{rgba(#0f0f0f, 0.85)};
+
+  --promotions-htmlContent: #fff;
 
   --menu-text-color: #fff;
   --menu-text-hover: #ff0000;
   --menu-boder-hover: #8996aa;
-  --header-to-bg-color: var(--bg-color);
 }
