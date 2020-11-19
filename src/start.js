@@ -47,7 +47,7 @@ const checkThemeSetting = 'Anson';
 
   //從Adam 樣板去撈看看
   const sitpackageModule = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', checkThemeSetting),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.newmaster', 'src', 'components', checkThemeSetting),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);
@@ -56,7 +56,7 @@ const checkThemeSetting = 'Anson';
 
   //從_global 去撈看看
   const sitpackageComponents = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', '_global'),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.newmaster', 'src', 'components', '_global'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);
@@ -64,7 +64,7 @@ const checkThemeSetting = 'Anson';
   );
   //從user 去撈看看
   const sitpackageUser = walkFilesSync(
-    path.resolve('..', '..', '..', 'sitepackage.frontend.other', 'src', 'components', 'user'),
+    path.resolve('..', '..', '..', 'sitepackage.frontend.newmaster', 'src', 'components', 'user'),
     (fname, dirname) => {
       // const fullpath = path.join(dirname, fname);
       return /\.vue$/.test(fname) || /\.scss$/.test(fname);
@@ -158,7 +158,7 @@ const checkThemeSetting = 'Anson';
 
     //建立輸出日期
     const d = new Date();
-    const backupDate = '20200922'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+    const backupDate = '20201119'; //d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
     filesJs.writeFile(checkThemeSetting + '_' + backupDate + '.json', JSON.stringify(themeJson, null, 2), errorHandler);
 
     //實際這個樣板真正有用到的

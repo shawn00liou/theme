@@ -1,5 +1,5 @@
-html[theme='light'] {
-  --font-color: #8996aa;
+html[theme] {
+  --font-color: #333;
   --bg-color: #eeeeee;
   --header-bgcolor: #ffffff;
   --link-color: var(--font-color);
@@ -54,4 +54,96 @@ html[theme='light'] {
   --table--tr-odd-bgcolor: rgba(210, 210, 210, 0.75);
   --table--gridcard-bgcolor: rgba(210, 210, 210, 0.75);
   --table--gridcard-color: #2b2e3e;
+
+  // 以上舊的備份
+
+  // // colors
+  // --q-color-primary: #ffcc00;
+  // --q-color-secondary: #d8a566;
+  // --q-color-accent: #762ae8;
+  // --q-color-positive: #56db8f;
+  // --q-color-negative: #f0b771;
+  // --q-color-info: #2462ff;
+  // --q-color-warning: #d50ee3;
+  // --q-color-dark: #333333;
+
+  // //基礎
+  // --font-color: #{rgba(#111, 0.85)};
+  // --bg-color: #{rgba(#e7e7e7, 0.95)};
+  // --link-color: #{rgba(#111, 0.55)};
+
+  // --header-bgcolor: #{rgba(#fff, 0.85)}; //主選單背景
+  // --footer-bgcolor: #{rgba(rgb(210, 210, 210), 0.75)}; //新增footer項目
+
+  // //優惠活動Tab
+  // --activityTab-bgcolor: #efefef; //優惠Tab 背景色
+  // --activityTab-color: var(--q-color-dark); //優惠Tab文字顏色
+  // --activityTab-active-color: var(--q-color-dark); //新增項目：文字、底線
+  // --activityTab-active-bgcolor: var(--q-color-primary); //新增項目：背景色
+  // --activityTab-borderColor: #{rgba(#000, 0.15)}; //優惠Tab 分隔線
+
+  // //彈窗：使用在登入、註冊、跑馬燈、優惠內容
+  // --dialog-bgcolor: #fff;
+  // --dialog-fontcolor: var(--font-color);
+  // --dialog-title-fontcolor: var(--dialog-fontcolor);
+
+  // //電子遊藝
+  // --toolbar-bgcolor: #f5f5f5;
+
+  // //關於我們 側邊攔.sidebar：因為CSS結構與命名沒對應到，所以目前沒作用
+  // // --about-sidebar-color: var(--font-color);
+  // // --about-sidebar-bgcolor: var(--q-color-dark);
+  // // --about-sidebar-itemActive-color: var(--q-color-dark);
+  // // --about-sidebar-itemActive-bgcolor: var(--q-color-primary);
+
+  // //關於我們 內容.about-content
+  // --about-content-bg: #f5f5f5; //背景色
+  // // --about-content-color: var(--font-color); //CSS沒套用，所以目前沒作用
+  // // --about-content-title-color: var(--font-color); //CSS沒套用，所以目前沒作用
+
+  // //登入與註冊
+  // --dialog-title-fontsize: 18px; //登入、註冊的標題
+  // --loginForm-bgcolor: var(--dialog-bgcolor, inherit); //登入、註冊的背景
+  // --loginForm-fontcolor: var(--dialog-fontcolor, inherit); //切換登入方式的文字顏色
+  // --loginForm-title-fontcolor: var(--dialog-title-fontcolor, inherit); //登入、註冊的標題顏色
+  // --loginForm-title-fontsize: var(--dialog-title-fontsize, inherit); //登入、註冊的標題字級
+  // --user-attention-color: var(--font-color); //登入後暱稱名
+
+  // //個人中心 基礎
+  // --user-color: var(--font-color); //個人中心文字顏色
+  // --user-card-color: #f5f5f5; //個人中心、團隊中心、登出、忘記密碼的背景色
+  --user-btn-color: #fff; //用在安全設置、交易紀錄：頁籤、日期下拉
+
+  // //表單：基礎
+  // --input-bgcolor: #e6e6e6; //表單：輸入框、下拉的背景色
+  // --input-fontcolor: var(--font-color); //表單：輸入框、下拉的文字顏色
+
+  // //充值、轉帳
+  // --user-form--input-bgcolor: var(--input-bgcolor);
+  // --user-form--input-color: var(--input-fontcolor);
+
+  // //投注紀錄、交易紀錄、個人資料：日期、下拉表單
+  // --user-form--search-input-bgcolor: var(--input-bgcolor);
+  // --user-form--search-input-color: var(--input-fontcolor);
+
+  // //下拉選單：背景色與文字，目前註解沒設就是延用Adom版設定
+  // // --select-bgcolor: var(--input-bgcolor);
+  // // --select-fontcolor: var(--input-fontcolor);
+
+  // //表格
+  // --table-bgcolor: var(--bg-color);
+  // --table-color: var(--font-color);
+  // --table--header-bgcolor: #{rgba(#d6d6d6, 0.55)};
+  // --table--header-color: var(--font-color);
+  // --table--tr-hover-color: inherit; //表格hover 文字顏色
+  // --table--tr-odd-bgcolor: #{rgba(#eee, 0.15)};
+
+  // //刪除站內信，再次確認
+  // --table--gridcard-bgcolor: var(--table-bgcolor);
+  // --table--gridcard-color: var(--table-color);
+
+  // //個人中心 側邊攔.user-sidebar，註解沒設就是延用Adom版設定
+  // --user-sidebar--li-color--actived: #000; //sidebar啟用狀態，文字顏色
+  // --user-sidebar--li-bgcolor--actived: var(--q-color-primary); //sidebar啟用狀態，背景色
+  // --user-sidebar-bgcolor: var(--user-card-color, inherit); //sidebar背景色
 }

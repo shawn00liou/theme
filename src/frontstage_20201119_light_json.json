@@ -1,0 +1,859 @@
+{
+  "adam": {
+    "--font-color": [
+      " #15151b;"
+    ],
+    "--bg-color": [
+      " #8996aa;"
+    ],
+    "--header-bgcolor": [
+      " #8996aa;"
+    ]
+  },
+  "amy": {
+    "--q-color-primary": [
+      " #ffcc00;"
+    ],
+    "--q-color-secondary": [
+      " #e0d42a;"
+    ],
+    "--q-color-accent": [
+      " #762ae8;"
+    ],
+    "--q-color-positive": [
+      " #56db8f;"
+    ],
+    "--q-color-negative": [
+      " #f0b771;"
+    ],
+    "--q-color-info": [
+      " #2462ff;"
+    ],
+    "--q-color-warning": [
+      " #d50ee3;"
+    ],
+    "--q-color-dark": [
+      " #333333;"
+    ],
+    "--font-color": [
+      " #{rgba(#fff, 0.85)};"
+    ],
+    "--bg-color": [
+      " #{rgba(#323232, 0.95)};"
+    ],
+    "--link-color": [
+      " #{rgba(#fff, 0.55)};"
+    ],
+    "--header-bgcolor": [
+      " #{rgba(#111, 0.45)}; //主選單背景"
+    ],
+    "--footer-bgcolor": [
+      " #{rgba(#111, 0.75)}; //新增footer項目"
+    ],
+    "--activityTab-bgcolor": [
+      " #efefef; //優惠Tab 背景色"
+    ],
+    "--activityTab-color": [
+      " var(--q-color-dark); //優惠Tab文字顏色"
+    ],
+    "--activityTab-active-color": [
+      " var(--q-color-dark); //新增項目：文字、底線"
+    ],
+    "--activityTab-active-bgcolor": [
+      " var(--q-color-primary); //新增項目：背景色"
+    ],
+    "--activityTab-borderColor": [
+      " #{rgba(#000, 0.15)}; //優惠Tab 分隔線"
+    ],
+    "--dialog-bgcolor": [
+      " var(--q-color-dark);"
+    ],
+    "--dialog-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--dialog-title-fontcolor": [
+      " var(--dialog-fontcolor);"
+    ],
+    "--toolbar-bgcolor": [
+      " #323232;"
+    ],
+    "--game-card-bgcolor": [
+      " var(--toolbar-bgcolor); //遊戲項目背景色"
+    ],
+    "// --about-sidebar-color": [
+      " var(--font-color);"
+    ],
+    "// --about-sidebar-bgcolor": [
+      " var(--q-color-dark);"
+    ],
+    "// --about-sidebar-itemActive-color": [
+      " var(--q-color-dark);"
+    ],
+    "// --about-sidebar-itemActive-bgcolor": [
+      " var(--q-color-primary);"
+    ],
+    "--about-content-bg": [
+      " #252525; //背景色"
+    ],
+    "// --about-content-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "// --about-content-title-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "--dialog-title-fontsize": [
+      " 18px; //登入、註冊的標題"
+    ],
+    "--loginForm-bgcolor": [
+      " var(--dialog-bgcolor, inherit); //登入、註冊的背景"
+    ],
+    "--loginForm-fontcolor": [
+      " var(--dialog-fontcolor, inherit); //切換登入方式的文字顏色"
+    ],
+    "--loginForm-title-fontcolor": [
+      " var(--dialog-title-fontcolor, inherit); //登入、註冊的標題顏色"
+    ],
+    "--loginForm-title-fontsize": [
+      " var(--dialog-title-fontsize, inherit); //登入、註冊的標題字級"
+    ],
+    "--user-attention-color": [
+      " var(--font-color); //登入後暱稱名"
+    ],
+    "--user-color": [
+      " var(--font-color); //個人中心文字顏色"
+    ],
+    "--user-card-color": [
+      " #2b2b2b; //個人中心、團隊中心、登出、忘記密碼的背景色"
+    ],
+    "--user-btn-color": [
+      " #{rgba(#888, 0.5)}; //用在安全設置、交易紀錄：頁籤、日期下拉"
+    ],
+    "--input-bgcolor": [
+      " #444; //表單：輸入框、下拉的背景色"
+    ],
+    "--input-fontcolor": [
+      " var(--font-color); //表單：輸入框、下拉的文字顏色"
+    ],
+    "--user-form--input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// --user-form--input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--search-input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--user-form--search-input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "// --select-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// --select-fontcolor": [
+      " var(--input-fontcolor);"
+    ],
+    "--table-bgcolor": [
+      " var(--bg-color);"
+    ],
+    "--table-color": [
+      " var(--font-color);"
+    ],
+    "--table--header-bgcolor": [
+      " #{rgba(#1d1d1d, 0.55)};"
+    ],
+    "--table--header-color": [
+      " var(--font-color);"
+    ],
+    "--table--tr-hover-color": [
+      " inherit; //表格hover 文字顏色"
+    ],
+    "--table--tr-odd-bgcolor": [
+      " #{rgba(#1d1d1d, 0.15)};"
+    ],
+    "--table--gridcard-bgcolor": [
+      " var(--table-bgcolor);"
+    ],
+    "--table--gridcard-color": [
+      " var(--table-color);"
+    ],
+    "--user-sidebar--li-color--actived": [
+      " #000; //sidebar啟用狀態，文字顏色"
+    ],
+    "--user-sidebar--li-bgcolor--actived": [
+      " var(--q-color-primary); //sidebar啟用狀態，背景色"
+    ],
+    "--user-sidebar-bgcolor": [
+      " var(--user-card-color, inherit); //sidebar背景色"
+    ]
+  },
+  "anson": {
+    "--q-color-primary": [
+      " #00baba;"
+    ],
+    "--q-color-secondary": [
+      " #009999;"
+    ],
+    "--q-color-accent": [
+      " #db5000;"
+    ],
+    "--q-color-positive": [
+      " #00ba51;"
+    ],
+    "--q-color-negative": [
+      " #c20d00;"
+    ],
+    "--q-color-info": [
+      " #0959b3;"
+    ],
+    "--q-color-warning": [
+      " #e89300;"
+    ],
+    "--q-color-dark": [
+      " #333333;"
+    ],
+    "--q-color-light": [
+      " #fff;"
+    ],
+    "--font-color": [
+      " #777;"
+    ],
+    "--bg-color": [
+      " #eee;"
+    ],
+    "--link-color": [
+      " #{rgba(#777, 0.55)};"
+    ],
+    "--header-bgcolor": [
+      " var(--q-color-light); //上方選單背景"
+    ],
+    "--nav-bgcolor": [
+      " #2d2e36; //左側主選單背景"
+    ],
+    "--nav--item-hover-bgcolor": [
+      " #25262c; //左側主選單",
+      "hover背景"
+    ],
+    "// --footer-bgcolor": [
+      " #{rgba(rgb(210, 210, 210), 0.75)}; //新增footer項目"
+    ],
+    "// --activityTab-bgcolor": [
+      " #efefef; //優惠Tab 背景色"
+    ],
+    "// --activityTab-color": [
+      " var(--q-color-dark); //優惠Tab文字顏色"
+    ],
+    "// --activityTab-active-color": [
+      " var(--q-color-dark); //新增項目：文字、底線"
+    ],
+    "// --activityTab-active-bgcolor": [
+      " var(--q-color-primary); //新增項目：背景色"
+    ],
+    "// --activityTab-borderColor": [
+      " #{rgba(#000, 0.15)}; //優惠Tab 分隔線"
+    ],
+    "--dialog-bgcolor": [
+      " #fcfcfc;"
+    ],
+    "--dialog-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--dialog-title-fontcolor": [
+      " var(--dialog-fontcolor);"
+    ],
+    "--toolbar-bgcolor": [
+      " #f5f5f5;"
+    ],
+    "--game-card-bgcolor": [
+      " var(--toolbar-bgcolor); //遊戲項目背景色"
+    ],
+    "// --about-sidebar-color": [
+      " var(--font-color);"
+    ],
+    "// --about-sidebar-bgcolor": [
+      " var(--q-color-dark);"
+    ],
+    "// --about-sidebar-itemActive-color": [
+      " var(--q-color-dark);"
+    ],
+    "// --about-sidebar-itemActive-bgcolor": [
+      " var(--q-color-primary);"
+    ],
+    "// --about-content-bg": [
+      " #f5f5f5; //背景色"
+    ],
+    "// --about-content-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "// --about-content-title-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "--dialog-title-fontsize": [
+      " 18px; //登入、註冊的標題"
+    ],
+    "--loginForm-bgcolor": [
+      " var(--dialog-bgcolor, inherit); //登入、註冊的背景"
+    ],
+    "--loginForm-fontcolor": [
+      " var(--dialog-fontcolor, inherit); //切換登入方式的文字顏色"
+    ],
+    "--loginForm-title-fontcolor": [
+      " var(--dialog-title-fontcolor, inherit); //登入、註冊的標題顏色"
+    ],
+    "--loginForm-title-fontsize": [
+      " var(--dialog-title-fontsize, inherit); //登入、註冊的標題字級"
+    ],
+    "--user-attention-color": [
+      " var(--q-color-primary); //登入後暱稱名"
+    ],
+    "--user-color": [
+      " #{$grey-9}; //個人中心文字顏色"
+    ],
+    "--user-card-color": [
+      " var(--q-color-light); //個人中心、團隊中心、登出、忘記密碼的背景色"
+    ],
+    "--user-btn-color": [
+      " #{rgba(#eee, 0.85)}; //用在安全設置、交易紀錄：頁籤、日期下拉"
+    ],
+    "--user-sidebar-bgcolor": [
+      " var(--user-card-color, inherit); //sidebar背景色"
+    ],
+    "--input-bgcolor": [
+      " #{$grey-3}; //表單：輸入框、下拉的背景色"
+    ],
+    "--input-fontcolor": [
+      " var(--font-color); //表單：輸入框、下拉的文字顏色"
+    ],
+    "--user-form--input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--user-form--input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--search-input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--user-form--search-input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "// --select-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// --select-fontcolor": [
+      " var(--input-fontcolor);"
+    ],
+    "--table-bgcolor": [
+      " #{$grey-2};"
+    ],
+    "--table-color": [
+      " var(--font-color);"
+    ],
+    "--table--header-bgcolor": [
+      " var(--q-color-primary);"
+    ],
+    "--table--header-color": [
+      " var(--q-color-light);"
+    ],
+    "--table--tr-hover-color": [
+      " inherit; //表格hover 文字顏色"
+    ],
+    "--table--tr-odd-bgcolor": [
+      " #{rgba(#ddd, 0.5)};"
+    ],
+    "--table--gridcard-bgcolor": [
+      " var(--table-bgcolor);"
+    ],
+    "--table--gridcard-color": [
+      " var(--table-color);"
+    ],
+    "// --user-sidebar--li-color--actived": [
+      " #000; //sidebar啟用狀態，文字顏色"
+    ],
+    "--user-sidebar--li-bgcolor--actived": [
+      " var(--q-color-primary); //sidebar啟用狀態，背景色"
+    ]
+  },
+  "alex": {
+    "--font-color": [
+      " #333;"
+    ],
+    "--bg-color": [
+      " #eeeeee;"
+    ],
+    "--header-bgcolor": [
+      " #ffffff;"
+    ],
+    "--link-color": [
+      " var(--font-color);"
+    ],
+    "--input-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--input-bgcolor": [
+      " #fff;"
+    ],
+    "--input-placeholder-fontcolor": [
+      " inherit;"
+    ],
+    "--q-color-primary": [
+      " #b71c1c;"
+    ],
+    "--q-color-positive": [
+      " #2aa524;"
+    ],
+    "--q-color-negative": [
+      " #c10015;"
+    ],
+    "--activityTab-color": [
+      " #8996aa;"
+    ],
+    "--activityTab-bgcolor": [
+      " #313445;"
+    ],
+    "--activityTab-borderColor": [
+      " #1f212e;"
+    ],
+    "--dialog-bgcolor": [
+      " var(--bg-color);"
+    ],
+    "--dialog-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--dialog-title-fontcolor": [
+      " var(--dialog-fontcolor);"
+    ],
+    "--dialog-title-fontsize": [
+      " 18px;"
+    ],
+    "--loginForm-bgcolor": [
+      " var(--dialog-bgcolor, inherit);"
+    ],
+    "--loginForm-fontcolor": [
+      " var(--dialog-fontcolor, inherit);"
+    ],
+    "--loginForm-title-fontcolor": [
+      " var(--dialog-title-fontcolor, inherit);"
+    ],
+    "--loginForm-title-fontsize": [
+      " var(--dialog-title-fontsize, inherit);"
+    ],
+    "--about-content-bg": [
+      " rgba(35, 38, 53, 0.5);"
+    ],
+    "--about-content-color": [
+      " var(--font-color);"
+    ],
+    "--about-content-title-color": [
+      " #fff;"
+    ],
+    "--select-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--select-fontcolor": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-color": [
+      " #000;"
+    ],
+    "--user-card-color": [
+      " #f4f4f4;"
+    ],
+    "--user-sidebar-bgcolor": [
+      " #{rgba(grey, 0.2)};"
+    ],
+    "--user-sidebar--li-bgcolor--actived": [
+      " var(--q-color-negative);"
+    ],
+    "--user-bankcard--card-bgcolor": [
+      " #{rgba(#000, 0.4)};"
+    ],
+    "--user-bankcard--card-color": [
+      " #fff;"
+    ],
+    "--user-form--input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--user-form--search-input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--search-input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--table-bgcolor": [
+      " transparent;"
+    ],
+    "--table-color": [
+      " #2b2e3e;"
+    ],
+    "--table--header-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--header-color": [
+      " #2b2e3e;"
+    ],
+    "--table--tr-hover-color": [
+      " inherit;"
+    ],
+    "--table--tr-odd-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--gridcard-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--gridcard-color": [
+      " #2b2e3e;"
+    ],
+    "// --q-color-primary": [
+      " #ffcc00;"
+    ],
+    "// --q-color-secondary": [
+      " #d8a566;"
+    ],
+    "// --q-color-accent": [
+      " #762ae8;"
+    ],
+    "// --q-color-positive": [
+      " #56db8f;"
+    ],
+    "// --q-color-negative": [
+      " #f0b771;"
+    ],
+    "// --q-color-info": [
+      " #2462ff;"
+    ],
+    "// --q-color-warning": [
+      " #d50ee3;"
+    ],
+    "// --q-color-dark": [
+      " #333333;"
+    ],
+    "// --font-color": [
+      " #{rgba(#111, 0.85)};"
+    ],
+    "// --bg-color": [
+      " #{rgba(#e7e7e7, 0.95)};"
+    ],
+    "// --link-color": [
+      " #{rgba(#111, 0.55)};"
+    ],
+    "// --header-bgcolor": [
+      " #{rgba(#fff, 0.85)}; //主選單背景"
+    ],
+    "// --footer-bgcolor": [
+      " #{rgba(rgb(210, 210, 210), 0.75)}; //新增footer項目"
+    ],
+    "// --activityTab-bgcolor": [
+      " #efefef; //優惠Tab 背景色"
+    ],
+    "// --activityTab-color": [
+      " var(--q-color-dark); //優惠Tab文字顏色"
+    ],
+    "// --activityTab-active-color": [
+      " var(--q-color-dark); //新增項目：文字、底線"
+    ],
+    "// --activityTab-active-bgcolor": [
+      " var(--q-color-primary); //新增項目：背景色"
+    ],
+    "// --activityTab-borderColor": [
+      " #{rgba(#000, 0.15)}; //優惠Tab 分隔線"
+    ],
+    "// --dialog-bgcolor": [
+      " #fff;"
+    ],
+    "// --dialog-fontcolor": [
+      " var(--font-color);"
+    ],
+    "// --dialog-title-fontcolor": [
+      " var(--dialog-fontcolor);"
+    ],
+    "// --toolbar-bgcolor": [
+      " #f5f5f5;"
+    ],
+    "// // --about-sidebar-color": [
+      " var(--font-color);"
+    ],
+    "// // --about-sidebar-bgcolor": [
+      " var(--q-color-dark);"
+    ],
+    "// // --about-sidebar-itemActive-color": [
+      " var(--q-color-dark);"
+    ],
+    "// // --about-sidebar-itemActive-bgcolor": [
+      " var(--q-color-primary);"
+    ],
+    "// --about-content-bg": [
+      " #f5f5f5; //背景色"
+    ],
+    "// // --about-content-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "// // --about-content-title-color": [
+      " var(--font-color); //CSS沒套用，所以目前沒作用"
+    ],
+    "// --dialog-title-fontsize": [
+      " 18px; //登入、註冊的標題"
+    ],
+    "// --loginForm-bgcolor": [
+      " var(--dialog-bgcolor, inherit); //登入、註冊的背景"
+    ],
+    "// --loginForm-fontcolor": [
+      " var(--dialog-fontcolor, inherit); //切換登入方式的文字顏色"
+    ],
+    "// --loginForm-title-fontcolor": [
+      " var(--dialog-title-fontcolor, inherit); //登入、註冊的標題顏色"
+    ],
+    "// --loginForm-title-fontsize": [
+      " var(--dialog-title-fontsize, inherit); //登入、註冊的標題字級"
+    ],
+    "// --user-attention-color": [
+      " var(--font-color); //登入後暱稱名"
+    ],
+    "// --user-color": [
+      " var(--font-color); //個人中心文字顏色"
+    ],
+    "// --user-card-color": [
+      " #f5f5f5; //個人中心、團隊中心、登出、忘記密碼的背景色"
+    ],
+    "--user-btn-color": [
+      " #fff; //用在安全設置、交易紀錄：頁籤、日期下拉"
+    ],
+    "// --input-bgcolor": [
+      " #e6e6e6; //表單：輸入框、下拉的背景色"
+    ],
+    "// --input-fontcolor": [
+      " var(--font-color); //表單：輸入框、下拉的文字顏色"
+    ],
+    "// --user-form--input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// --user-form--input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "// --user-form--search-input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// --user-form--search-input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "// // --select-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "// // --select-fontcolor": [
+      " var(--input-fontcolor);"
+    ],
+    "// --table-bgcolor": [
+      " var(--bg-color);"
+    ],
+    "// --table-color": [
+      " var(--font-color);"
+    ],
+    "// --table--header-bgcolor": [
+      " #{rgba(#d6d6d6, 0.55)};"
+    ],
+    "// --table--header-color": [
+      " var(--font-color);"
+    ],
+    "// --table--tr-hover-color": [
+      " inherit; //表格hover 文字顏色"
+    ],
+    "// --table--tr-odd-bgcolor": [
+      " #{rgba(#eee, 0.15)};"
+    ],
+    "// --table--gridcard-bgcolor": [
+      " var(--table-bgcolor);"
+    ],
+    "// --table--gridcard-color": [
+      " var(--table-color);"
+    ],
+    "// --user-sidebar--li-color--actived": [
+      " #000; //sidebar啟用狀態，文字顏色"
+    ],
+    "// --user-sidebar--li-bgcolor--actived": [
+      " var(--q-color-primary); //sidebar啟用狀態，背景色"
+    ],
+    "// --user-sidebar-bgcolor": [
+      " var(--user-card-color, inherit); //sidebar背景色"
+    ]
+  },
+  "adi": {
+    "--font-color": [
+      " #22262a;"
+    ],
+    "--bg-color": [
+      " #fafafb;"
+    ],
+    "--header-bgcolor": [
+      " #ffffff;"
+    ],
+    "--link-color": [
+      " var(--font-color);"
+    ],
+    "--content-color": [
+      " #808080;"
+    ],
+    "--current-color": [
+      " #fe545c;"
+    ],
+    "--hover-color": [
+      " #770b0b;"
+    ],
+    "--date-color": [
+      " #bfbfbf;"
+    ],
+    "--border-color": [
+      " #e4e5e7;"
+    ],
+    "--Navborder-color": [
+      " #deba64;"
+    ],
+    "--footer-bgcolor": [
+      " #6d0000;"
+    ],
+    "--q-color-primary": [
+      " #c60000;"
+    ],
+    "--q-color-secondary": [
+      " #ebbc29;"
+    ],
+    "--q-color-accent": [
+      " #d99f2b;"
+    ],
+    "--q-color-positive": [
+      " #fe545c;"
+    ],
+    "--q-color-dark": [
+      " #1d1d1d;"
+    ],
+    "--input-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--input-bgcolor": [
+      " var(--border-color);"
+    ],
+    "--input-placeholder-fontcolor": [
+      " inherit;"
+    ],
+    "--q-color-negative": [
+      " #c10015;"
+    ],
+    "--q-color-info": [
+      " #030381;"
+    ],
+    "--q-color-warning": [
+      " var(--q-color-secondary);"
+    ],
+    "--activityTab-color": [
+      " #8996aa;"
+    ],
+    "--activityTab-bgcolor": [
+      " #313445;"
+    ],
+    "--activityTab-borderColor": [
+      " #1f212e;"
+    ],
+    "--dialog-bgcolor": [
+      " var(--bg-color);"
+    ],
+    "--dialog-fontcolor": [
+      " var(--font-color);"
+    ],
+    "--dialog-title-fontcolor": [
+      " var(--dialog-fontcolor);"
+    ],
+    "--dialog-title-fontsize": [
+      " 18px;"
+    ],
+    "--loginForm-bgcolor": [
+      " var(--dialog-bgcolor, inherit);"
+    ],
+    "--loginForm-fontcolor": [
+      " var(--dialog-fontcolor, inherit);"
+    ],
+    "--loginForm-title-fontcolor": [
+      " var(--dialog-title-fontcolor, inherit);"
+    ],
+    "--loginForm-title-fontsize": [
+      " var(--dialog-title-fontsize, inherit);"
+    ],
+    "--about-content-bg": [
+      " rgba(35, 38, 53, 0.5);"
+    ],
+    "--about-content-color": [
+      " var(--font-color);"
+    ],
+    "--about-content-title-color": [
+      " #fff;"
+    ],
+    "--select-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--select-fontcolor": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-attention-color": [
+      " #fff;"
+    ],
+    "--user-color": [
+      " #000;"
+    ],
+    "--user-card-color": [
+      " #f4f4f4;"
+    ],
+    "--user-btn-color": [
+      " var(--q-color-primary);"
+    ],
+    "--user-sidebar-bgcolor": [
+      " #{rgba(grey, 0.2)};"
+    ],
+    "--user-sidebar--li-bgcolor--actived": [
+      " var(--q-color-primary);"
+    ],
+    "--user-bankcard--card-bgcolor": [
+      " #{rgba(#000, 0.4)};"
+    ],
+    "--user-bankcard--card-color": [
+      " #fff;"
+    ],
+    "--user-form--input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--user-form--search-input-color": [
+      " var(--input-fontcolor);"
+    ],
+    "--user-form--search-input-bgcolor": [
+      " var(--input-bgcolor);"
+    ],
+    "--table-bgcolor": [
+      " transparent;"
+    ],
+    "--table-color": [
+      " #2b2e3e;"
+    ],
+    "--table--header-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--header-color": [
+      " #2b2e3e;"
+    ],
+    "--table--tr-hover-color": [
+      " inherit;"
+    ],
+    "--table--tr-odd-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--gridcard-bgcolor": [
+      " rgba(210, 210, 210, 0.75);"
+    ],
+    "--table--gridcard-color": [
+      " #2b2e3e;"
+    ],
+    "--bulletinBoardVertical-fontcolor": [
+      " #fff;"
+    ]
+  }
+}

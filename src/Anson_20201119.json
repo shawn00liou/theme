@@ -1,50 +1,38 @@
 {
   "--font-color": [
-    "Adam",
-    "css",
+    "Anson",
     "global",
-    "user"
+    "user",
+    "css"
   ],
   "--bg-color": [
-    "Adam",
-    "css",
-    "user"
+    "Anson",
+    "global",
+    "user",
+    "css"
   ],
   "--header-bgcolor": [
     "css"
   ],
-  "--link-color": [
-    "css"
-  ],
-  "--input-fontcolor": [
-    "css",
-    "user"
-  ],
-  "--input-bgcolor": [
-    "user"
-  ],
-  "--input-placeholder-fontcolor": [
-    "user"
-  ],
   "--q-color-primary": [
-    "Adam",
-    "css",
-    "user"
+    "Anson",
+    "user",
+    "css"
   ],
   "--q-color-positive": [
     "user"
   ],
   "--q-color-negative": [
-    "css",
+    "Anson",
     "user"
   ],
   "--dialog-bgcolor": [
-    "css",
-    "global"
+    "global",
+    "css"
   ],
   "--dialog-fontcolor": [
-    "css",
-    "global"
+    "global",
+    "css"
   ],
   "--dialog-title-fontcolor": [
     "css"
@@ -65,52 +53,66 @@
     "user"
   ],
   "--about-content-bg": [
-    "Adam"
+    "Anson"
   ],
   "--about-content-color": [
-    "Adam"
+    "Anson"
   ],
-  "--select-bgcolor": [
-    "user"
+  "--q-color-dark": [
+    "css"
   ],
-  "--select-fontcolor": [
-    "user"
+  "--q-color-light": [
+    "css"
+  ],
+  "--nav-bgcolor": [
+    "css"
+  ],
+  "--nav--item-hover-bgcolor": [
+    "css"
+  ],
+  "--toolbar-bgcolor": [
+    "css"
+  ],
+  "--game-card-bgcolor": [
+    "css"
   ],
   "--user-color": [
     "user"
   ],
   "--user-card-color": [
-    "user"
+    "user",
+    "css"
   ],
   "--user-sidebar-bgcolor": [
     "user"
   ],
-  "--user-sidebar--li-bgcolor--actived": [
-    "user"
+  "--input-bgcolor": [
+    "user",
+    "css"
   ],
-  "--user-bankcard--card-bgcolor": [
-    "user"
+  "--input-fontcolor": [
+    "user",
+    "css"
   ],
-  "--user-bankcard--card-color": [
+  "--user-form--input-bgcolor": [
     "user"
   ],
   "--user-form--input-color": [
     "user"
   ],
-  "--user-form--input-bgcolor": [
+  "--user-form--search-input-bgcolor": [
     "user"
   ],
   "--user-form--search-input-color": [
     "user"
   ],
-  "--user-form--search-input-bgcolor": [
-    "user"
-  ],
   "--table-bgcolor": [
-    "user"
+    "user",
+    "css"
   ],
   "--table-color": [
-    "user"
+    "user",
+    "css"
   ],
   "--table--header-bgcolor": [
     "user"
@@ -130,28 +132,28 @@
   "--table--gridcard-color": [
     "user"
   ],
-  "--activityTab-color": [
-    "Adam"
+  "--user-sidebar--li-bgcolor--actived": [
+    "user"
   ],
-  "--activityTab-bgcolor": [
-    "Adam"
+  "--user-sidebar--li-color--actived": [
+    "user"
   ],
-  "--activityTab-borderColor": [
-    "Adam"
+  "--input-placeholder-fontcolor": [
+    "user"
   ],
-  "--about-content-title-color": [
-    "Adam"
+  "--select-bgcolor": [
+    "user"
   ],
-  "--about-sidebar-color": [
-    "css"
+  "--select-fontcolor": [
+    "user"
   ],
-  "--about-sidebar-bgcolor": [
-    "css"
+  "--user-bankcard--card-bgcolor": [
+    "user"
   ],
-  "--about-sidebar-itemActive-color": [
-    "css"
+  "--user-bankcard--card-color": [
+    "user"
   ],
-  "--about-sidebar-itemActive-bgcolor": [
-    "css"
+  "--bulletinBoardVertical-fontcolor": [
+    "global"
   ]
 }

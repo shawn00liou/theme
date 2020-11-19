@@ -4,25 +4,27 @@ html[theme] {
   --header-bgcolor: #ffffff;
   --link-color: var(--font-color);
   --content-color: #808080;
-  --current-color: #90a0b3;
-  --hover-color: #525b66;
+  --current-color: #fe545c;
+  --hover-color: #770b0b;
   --date-color: #bfbfbf;
   --border-color: #e4e5e7;
+  --Navborder-color: #deba64;
+  --footer-bgcolor: #6d0000;
 
   /** Quasar(--q-)的預設值設定，也可以修改裡面的"值"*/
-  --q-color-primary: #ff9933;
-  --q-color-secondary: #138808;
-  --q-color-accent: #704ee3;
+  --q-color-primary: #c60000;
+  --q-color-secondary: #ebbc29;
+  --q-color-accent: #d99f2b;
+  --q-color-positive: #fe545c;
   --q-color-dark: #1d1d1d;
 
   --input-fontcolor: var(--font-color);
-  --input-bgcolor: #fff;
+  --input-bgcolor: var(--border-color);
   --input-placeholder-fontcolor: inherit;
 
-  --q-color-positive: #2aa524;
   --q-color-negative: #c10015;
   --q-color-info: #030381;
-  --q-color-warning: #ff4858;
+  --q-color-warning: var(--q-color-secondary);
   //
   --activityTab-color: #8996aa;
   --activityTab-bgcolor: #313445;
@@ -46,7 +48,7 @@ html[theme] {
   // --- user ---
   // --- user ---
   // --- user ---
-  --user-attention-color: var(--font-color);
+  --user-attention-color: #fff;
   --user-color: #000;
   --user-card-color: #f4f4f4;
   --user-btn-color: var(--q-color-primary);
@@ -70,4 +72,5 @@ html[theme] {
   --table--tr-odd-bgcolor: rgba(210, 210, 210, 0.75);
   --table--gridcard-bgcolor: rgba(210, 210, 210, 0.75);
   --table--gridcard-color: #2b2e3e;
+  --bulletinBoardVertical-fontcolor: #fff;
 }
